@@ -1,0 +1,2140 @@
+
+==================上传客户端分数接口测试=========================
+测试1：url=http://127.0.0.1:8000/client/
+参数: {'number': -1, 'grade': -100}, body: None
+测试1结果: status=400, response={'number': ['This field is required.'], 'grade': ['This field is required.']}  响应时间：7.9784393310546875ms
+测试2：url=http://127.0.0.1:8000/client/
+参数: {'number': -1, 'grade': 0}, body: None
+测试2结果: status=400, response={'number': ['This field is required.'], 'grade': ['This field is required.']}  响应时间：2.9921531677246094ms
+测试3：url=http://127.0.0.1:8000/client/
+参数: {'number': -1, 'grade': 1}, body: None
+测试3结果: status=400, response={'number': ['This field is required.'], 'grade': ['This field is required.']}  响应时间：2.991914749145508ms
+测试4：url=http://127.0.0.1:8000/client/
+参数: {'number': -1, 'grade': 1000}, body: None
+测试4结果: status=400, response={'number': ['This field is required.'], 'grade': ['This field is required.']}  响应时间：2.992391586303711ms
+测试5：url=http://127.0.0.1:8000/client/
+参数: {'number': -1, 'grade': None}, body: None
+测试5结果: status=400, response={'number': ['This field is required.'], 'grade': ['This field is required.']}  响应时间：2.9916763305664062ms
+测试6：url=http://127.0.0.1:8000/client/
+参数: {'number': -1, 'grade': ''}, body: None
+测试6结果: status=400, response={'number': ['This field is required.'], 'grade': ['This field is required.']}  响应时间：2.991914749145508ms
+测试7：url=http://127.0.0.1:8000/client/
+参数: {'number': -1, 'grade': '1'}, body: None
+测试7结果: status=400, response={'number': ['This field is required.'], 'grade': ['This field is required.']}  响应时间：4.987001419067383ms
+测试8：url=http://127.0.0.1:8000/client/
+参数: {'number': -1, 'grade': 'a'}, body: None
+测试8结果: status=400, response={'number': ['This field is required.'], 'grade': ['This field is required.']}  响应时间：2.9926300048828125ms
+测试9：url=http://127.0.0.1:8000/client/
+参数: {'number': 0, 'grade': -100}, body: None
+测试9结果: status=400, response={'number': ['This field is required.'], 'grade': ['This field is required.']}  响应时间：2.991199493408203ms
+测试10：url=http://127.0.0.1:8000/client/
+参数: {'number': 0, 'grade': 0}, body: None
+测试10结果: status=400, response={'number': ['This field is required.'], 'grade': ['This field is required.']}  响应时间：3.9892196655273438ms
+测试11：url=http://127.0.0.1:8000/client/
+参数: {'number': 0, 'grade': 1}, body: None
+测试11结果: status=400, response={'number': ['This field is required.'], 'grade': ['This field is required.']}  响应时间：2.9916763305664062ms
+测试12：url=http://127.0.0.1:8000/client/
+参数: {'number': 0, 'grade': 1000}, body: None
+测试12结果: status=400, response={'number': ['This field is required.'], 'grade': ['This field is required.']}  响应时间：2.992391586303711ms
+测试13：url=http://127.0.0.1:8000/client/
+参数: {'number': 0, 'grade': None}, body: None
+测试13结果: status=400, response={'number': ['This field is required.'], 'grade': ['This field is required.']}  响应时间：2.9916763305664062ms
+测试14：url=http://127.0.0.1:8000/client/
+参数: {'number': 0, 'grade': ''}, body: None
+测试14结果: status=400, response={'number': ['This field is required.'], 'grade': ['This field is required.']}  响应时间：2.9921531677246094ms
+测试15：url=http://127.0.0.1:8000/client/
+参数: {'number': 0, 'grade': '1'}, body: None
+测试15结果: status=400, response={'number': ['This field is required.'], 'grade': ['This field is required.']}  响应时间：2.991914749145508ms
+测试16：url=http://127.0.0.1:8000/client/
+参数: {'number': 0, 'grade': 'a'}, body: None
+测试16结果: status=400, response={'number': ['This field is required.'], 'grade': ['This field is required.']}  响应时间：2.991914749145508ms
+测试17：url=http://127.0.0.1:8000/client/
+参数: {'number': 1, 'grade': -100}, body: None
+测试17结果: status=400, response={'number': ['This field is required.'], 'grade': ['This field is required.']}  响应时间：2.992868423461914ms
+测试18：url=http://127.0.0.1:8000/client/
+参数: {'number': 1, 'grade': 0}, body: None
+测试18结果: status=400, response={'number': ['This field is required.'], 'grade': ['This field is required.']}  响应时间：5.9833526611328125ms
+测试19：url=http://127.0.0.1:8000/client/
+参数: {'number': 1, 'grade': 1}, body: None
+测试19结果: status=400, response={'number': ['This field is required.'], 'grade': ['This field is required.']}  响应时间：2.9916763305664062ms
+测试20：url=http://127.0.0.1:8000/client/
+参数: {'number': 1, 'grade': 1000}, body: None
+测试20结果: status=400, response={'number': ['This field is required.'], 'grade': ['This field is required.']}  响应时间：2.9921531677246094ms
+测试21：url=http://127.0.0.1:8000/client/
+参数: {'number': 1, 'grade': None}, body: None
+测试21结果: status=400, response={'number': ['This field is required.'], 'grade': ['This field is required.']}  响应时间：2.9921531677246094ms
+测试22：url=http://127.0.0.1:8000/client/
+参数: {'number': 1, 'grade': ''}, body: None
+测试22结果: status=400, response={'number': ['This field is required.'], 'grade': ['This field is required.']}  响应时间：2.992391586303711ms
+测试23：url=http://127.0.0.1:8000/client/
+参数: {'number': 1, 'grade': '1'}, body: None
+测试23结果: status=400, response={'number': ['This field is required.'], 'grade': ['This field is required.']}  响应时间：2.9914379119873047ms
+测试24：url=http://127.0.0.1:8000/client/
+参数: {'number': 1, 'grade': 'a'}, body: None
+测试24结果: status=400, response={'number': ['This field is required.'], 'grade': ['This field is required.']}  响应时间：2.9921531677246094ms
+测试25：url=http://127.0.0.1:8000/client/
+参数: {'number': 10, 'grade': -100}, body: None
+测试25结果: status=400, response={'number': ['This field is required.'], 'grade': ['This field is required.']}  响应时间：2.9921531677246094ms
+测试26：url=http://127.0.0.1:8000/client/
+参数: {'number': 10, 'grade': 0}, body: None
+测试26结果: status=400, response={'number': ['This field is required.'], 'grade': ['This field is required.']}  响应时间：2.9916763305664062ms
+测试27：url=http://127.0.0.1:8000/client/
+参数: {'number': 10, 'grade': 1}, body: None
+测试27结果: status=400, response={'number': ['This field is required.'], 'grade': ['This field is required.']}  响应时间：3.989696502685547ms
+测试28：url=http://127.0.0.1:8000/client/
+参数: {'number': 10, 'grade': 1000}, body: None
+测试28结果: status=400, response={'number': ['This field is required.'], 'grade': ['This field is required.']}  响应时间：2.9914379119873047ms
+测试29：url=http://127.0.0.1:8000/client/
+参数: {'number': 10, 'grade': None}, body: None
+测试29结果: status=400, response={'number': ['This field is required.'], 'grade': ['This field is required.']}  响应时间：2.991914749145508ms
+测试30：url=http://127.0.0.1:8000/client/
+参数: {'number': 10, 'grade': ''}, body: None
+测试30结果: status=400, response={'number': ['This field is required.'], 'grade': ['This field is required.']}  响应时间：2.992391586303711ms
+测试31：url=http://127.0.0.1:8000/client/
+参数: {'number': 10, 'grade': '1'}, body: None
+测试31结果: status=400, response={'number': ['This field is required.'], 'grade': ['This field is required.']}  响应时间：2.9921531677246094ms
+测试32：url=http://127.0.0.1:8000/client/
+参数: {'number': 10, 'grade': 'a'}, body: None
+测试32结果: status=400, response={'number': ['This field is required.'], 'grade': ['This field is required.']}  响应时间：2.9916763305664062ms
+测试33：url=http://127.0.0.1:8000/client/
+参数: {'number': None, 'grade': -100}, body: None
+测试33结果: status=400, response={'number': ['This field is required.'], 'grade': ['This field is required.']}  响应时间：2.9926300048828125ms
+测试34：url=http://127.0.0.1:8000/client/
+参数: {'number': None, 'grade': 0}, body: None
+测试34结果: status=400, response={'number': ['This field is required.'], 'grade': ['This field is required.']}  响应时间：2.9914379119873047ms
+测试35：url=http://127.0.0.1:8000/client/
+参数: {'number': None, 'grade': 1}, body: None
+测试35结果: status=400, response={'number': ['This field is required.'], 'grade': ['This field is required.']}  响应时间：3.9894580841064453ms
+测试36：url=http://127.0.0.1:8000/client/
+参数: {'number': None, 'grade': 1000}, body: None
+测试36结果: status=400, response={'number': ['This field is required.'], 'grade': ['This field is required.']}  响应时间：2.991914749145508ms
+测试37：url=http://127.0.0.1:8000/client/
+参数: {'number': None, 'grade': None}, body: None
+测试37结果: status=400, response={'number': ['This field is required.'], 'grade': ['This field is required.']}  响应时间：2.991914749145508ms
+测试38：url=http://127.0.0.1:8000/client/
+参数: {'number': None, 'grade': ''}, body: None
+测试38结果: status=400, response={'number': ['This field is required.'], 'grade': ['This field is required.']}  响应时间：3.9904117584228516ms
+测试39：url=http://127.0.0.1:8000/client/
+参数: {'number': None, 'grade': '1'}, body: None
+测试39结果: status=400, response={'number': ['This field is required.'], 'grade': ['This field is required.']}  响应时间：2.9914379119873047ms
+测试40：url=http://127.0.0.1:8000/client/
+参数: {'number': None, 'grade': 'a'}, body: None
+测试40结果: status=400, response={'number': ['This field is required.'], 'grade': ['This field is required.']}  响应时间：3.9892196655273438ms
+测试41：url=http://127.0.0.1:8000/client/
+参数: {'number': '', 'grade': -100}, body: None
+测试41结果: status=400, response={'number': ['This field is required.'], 'grade': ['This field is required.']}  响应时间：2.9914379119873047ms
+测试42：url=http://127.0.0.1:8000/client/
+参数: {'number': '', 'grade': 0}, body: None
+测试42结果: status=400, response={'number': ['This field is required.'], 'grade': ['This field is required.']}  响应时间：2.992391586303711ms
+测试43：url=http://127.0.0.1:8000/client/
+参数: {'number': '', 'grade': 1}, body: None
+测试43结果: status=400, response={'number': ['This field is required.'], 'grade': ['This field is required.']}  响应时间：2.991914749145508ms
+测试44：url=http://127.0.0.1:8000/client/
+参数: {'number': '', 'grade': 1000}, body: None
+测试44结果: status=400, response={'number': ['This field is required.'], 'grade': ['This field is required.']}  响应时间：2.9921531677246094ms
+测试45：url=http://127.0.0.1:8000/client/
+参数: {'number': '', 'grade': None}, body: None
+测试45结果: status=400, response={'number': ['This field is required.'], 'grade': ['This field is required.']}  响应时间：2.991914749145508ms
+测试46：url=http://127.0.0.1:8000/client/
+参数: {'number': '', 'grade': ''}, body: None
+测试46结果: status=400, response={'number': ['This field is required.'], 'grade': ['This field is required.']}  响应时间：2.9921531677246094ms
+测试47：url=http://127.0.0.1:8000/client/
+参数: {'number': '', 'grade': '1'}, body: None
+测试47结果: status=400, response={'number': ['This field is required.'], 'grade': ['This field is required.']}  响应时间：3.988981246948242ms
+测试48：url=http://127.0.0.1:8000/client/
+参数: {'number': '', 'grade': 'a'}, body: None
+测试48结果: status=400, response={'number': ['This field is required.'], 'grade': ['This field is required.']}  响应时间：2.9926300048828125ms
+测试49：url=http://127.0.0.1:8000/client/
+参数: {'number': '1', 'grade': -100}, body: None
+测试49结果: status=400, response={'number': ['This field is required.'], 'grade': ['This field is required.']}  响应时间：2.991914749145508ms
+测试50：url=http://127.0.0.1:8000/client/
+参数: {'number': '1', 'grade': 0}, body: None
+测试50结果: status=400, response={'number': ['This field is required.'], 'grade': ['This field is required.']}  响应时间：2.9921531677246094ms
+测试51：url=http://127.0.0.1:8000/client/
+参数: {'number': '1', 'grade': 1}, body: None
+测试51结果: status=400, response={'number': ['This field is required.'], 'grade': ['This field is required.']}  响应时间：2.9921531677246094ms
+测试52：url=http://127.0.0.1:8000/client/
+参数: {'number': '1', 'grade': 1000}, body: None
+测试52结果: status=400, response={'number': ['This field is required.'], 'grade': ['This field is required.']}  响应时间：3.9892196655273438ms
+测试53：url=http://127.0.0.1:8000/client/
+参数: {'number': '1', 'grade': None}, body: None
+测试53结果: status=400, response={'number': ['This field is required.'], 'grade': ['This field is required.']}  响应时间：2.9921531677246094ms
+测试54：url=http://127.0.0.1:8000/client/
+参数: {'number': '1', 'grade': ''}, body: None
+测试54结果: status=400, response={'number': ['This field is required.'], 'grade': ['This field is required.']}  响应时间：2.991914749145508ms
+测试55：url=http://127.0.0.1:8000/client/
+参数: {'number': '1', 'grade': '1'}, body: None
+测试55结果: status=400, response={'number': ['This field is required.'], 'grade': ['This field is required.']}  响应时间：2.991914749145508ms
+测试56：url=http://127.0.0.1:8000/client/
+参数: {'number': '1', 'grade': 'a'}, body: None
+测试56结果: status=400, response={'number': ['This field is required.'], 'grade': ['This field is required.']}  响应时间：3.989696502685547ms
+测试57：url=http://127.0.0.1:8000/client/
+参数: {'number': 'a', 'grade': -100}, body: None
+测试57结果: status=400, response={'number': ['This field is required.'], 'grade': ['This field is required.']}  响应时间：2.9916763305664062ms
+测试58：url=http://127.0.0.1:8000/client/
+参数: {'number': 'a', 'grade': 0}, body: None
+测试58结果: status=400, response={'number': ['This field is required.'], 'grade': ['This field is required.']}  响应时间：2.992391586303711ms
+测试59：url=http://127.0.0.1:8000/client/
+参数: {'number': 'a', 'grade': 1}, body: None
+测试59结果: status=400, response={'number': ['This field is required.'], 'grade': ['This field is required.']}  响应时间：2.9916763305664062ms
+测试60：url=http://127.0.0.1:8000/client/
+参数: {'number': 'a', 'grade': 1000}, body: None
+测试60结果: status=400, response={'number': ['This field is required.'], 'grade': ['This field is required.']}  响应时间：3.9892196655273438ms
+测试61：url=http://127.0.0.1:8000/client/
+参数: {'number': 'a', 'grade': None}, body: None
+测试61结果: status=400, response={'number': ['This field is required.'], 'grade': ['This field is required.']}  响应时间：2.9916763305664062ms
+测试62：url=http://127.0.0.1:8000/client/
+参数: {'number': 'a', 'grade': ''}, body: None
+测试62结果: status=400, response={'number': ['This field is required.'], 'grade': ['This field is required.']}  响应时间：2.9921531677246094ms
+测试63：url=http://127.0.0.1:8000/client/
+参数: {'number': 'a', 'grade': '1'}, body: None
+测试63结果: status=400, response={'number': ['This field is required.'], 'grade': ['This field is required.']}  响应时间：3.0794143676757812ms
+测试64：url=http://127.0.0.1:8000/client/
+参数: {'number': 'a', 'grade': 'a'}, body: None
+测试64结果: status=400, response={'number': ['This field is required.'], 'grade': ['This field is required.']}  响应时间：2.9048919677734375ms
+
+==================排行榜接口测试=========================
+测试1：url=http://127.0.0.1:8000/rank/
+参数: {'number': -1, 'start': -1, 'stop': -1}, body: None
+测试1结果: status=200, response=[[1, 100]]  响应时间：15.957355499267578ms
+测试2：url=http://127.0.0.1:8000/rank/
+参数: {'number': -1, 'start': -1, 'stop': 0}, body: None
+测试2结果: status=200, response=[]  响应时间：3.9892196655273438ms
+测试3：url=http://127.0.0.1:8000/rank/
+参数: {'number': -1, 'start': -1, 'stop': 5}, body: None
+测试3结果: status=200, response=[[1, 100]]  响应时间：2.9921531677246094ms
+测试4：url=http://127.0.0.1:8000/rank/
+参数: {'number': -1, 'start': -1, 'stop': 10}, body: None
+测试4结果: status=200, response=[[1, 100]]  响应时间：2.991914749145508ms
+测试5：url=http://127.0.0.1:8000/rank/
+参数: {'number': -1, 'start': -1, 'stop': 20}, body: None
+测试5结果: status=200, response=[[1, 100]]  响应时间：2.991914749145508ms
+测试6：url=http://127.0.0.1:8000/rank/
+参数: {'number': -1, 'start': -1, 'stop': None}, body: None
+测试6结果: status=200, response=[[1, 100]]  响应时间：2.991914749145508ms
+测试7：url=http://127.0.0.1:8000/rank/
+参数: {'number': -1, 'start': -1, 'stop': ''}, body: None
+测试7结果: status=200, response=[[1, 100]]  响应时间：2.9921531677246094ms
+测试8：url=http://127.0.0.1:8000/rank/
+参数: {'number': -1, 'start': -1, 'stop': '1'}, body: None
+测试8结果: status=200, response=[]  响应时间：2.9914379119873047ms
+测试9：url=http://127.0.0.1:8000/rank/
+参数: {'number': -1, 'start': -1, 'stop': 'a'}, body: None
+测试9结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：1.9953250885009766ms
+测试10：url=http://127.0.0.1:8000/rank/
+参数: {'number': -1, 'start': 0, 'stop': -1}, body: None
+测试10结果: status=200, response=[[6, 200], [5, 200], [3, 102], [2, 100], [1, 100]]  响应时间：3.9892196655273438ms
+测试11：url=http://127.0.0.1:8000/rank/
+参数: {'number': -1, 'start': 0, 'stop': 0}, body: None
+测试11结果: status=200, response=[[6, 200]]  响应时间：2.9921531677246094ms
+测试12：url=http://127.0.0.1:8000/rank/
+参数: {'number': -1, 'start': 0, 'stop': 5}, body: None
+测试12结果: status=200, response=[[6, 200], [5, 200], [3, 102], [2, 100], [1, 100]]  响应时间：2.991199493408203ms
+测试13：url=http://127.0.0.1:8000/rank/
+参数: {'number': -1, 'start': 0, 'stop': 10}, body: None
+测试13结果: status=200, response=[[6, 200], [5, 200], [3, 102], [2, 100], [1, 100]]  响应时间：3.99017333984375ms
+测试14：url=http://127.0.0.1:8000/rank/
+参数: {'number': -1, 'start': 0, 'stop': 20}, body: None
+测试14结果: status=200, response=[[6, 200], [5, 200], [3, 102], [2, 100], [1, 100]]  响应时间：2.9916763305664062ms
+测试15：url=http://127.0.0.1:8000/rank/
+参数: {'number': -1, 'start': 0, 'stop': None}, body: None
+测试15结果: status=200, response=[[6, 200], [5, 200], [3, 102], [2, 100], [1, 100]]  响应时间：2.9921531677246094ms
+测试16：url=http://127.0.0.1:8000/rank/
+参数: {'number': -1, 'start': 0, 'stop': ''}, body: None
+测试16结果: status=200, response=[[6, 200], [5, 200], [3, 102], [2, 100], [1, 100]]  响应时间：1.9943714141845703ms
+测试17：url=http://127.0.0.1:8000/rank/
+参数: {'number': -1, 'start': 0, 'stop': '1'}, body: None
+测试17结果: status=200, response=[[6, 200], [5, 200]]  响应时间：2.9921531677246094ms
+测试18：url=http://127.0.0.1:8000/rank/
+参数: {'number': -1, 'start': 0, 'stop': 'a'}, body: None
+测试18结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：2.992391586303711ms
+测试19：url=http://127.0.0.1:8000/rank/
+参数: {'number': -1, 'start': 1, 'stop': -1}, body: None
+测试19结果: status=200, response=[[5, 200], [3, 102], [2, 100], [1, 100]]  响应时间：2.9921531677246094ms
+测试20：url=http://127.0.0.1:8000/rank/
+参数: {'number': -1, 'start': 1, 'stop': 0}, body: None
+测试20结果: status=200, response=[]  响应时间：3.9887428283691406ms
+测试21：url=http://127.0.0.1:8000/rank/
+参数: {'number': -1, 'start': 1, 'stop': 5}, body: None
+测试21结果: status=200, response=[[5, 200], [3, 102], [2, 100], [1, 100]]  响应时间：2.9921531677246094ms
+测试22：url=http://127.0.0.1:8000/rank/
+参数: {'number': -1, 'start': 1, 'stop': 10}, body: None
+测试22结果: status=200, response=[[5, 200], [3, 102], [2, 100], [1, 100]]  响应时间：2.991914749145508ms
+测试23：url=http://127.0.0.1:8000/rank/
+参数: {'number': -1, 'start': 1, 'stop': 20}, body: None
+测试23结果: status=200, response=[[5, 200], [3, 102], [2, 100], [1, 100]]  响应时间：2.9916763305664062ms
+测试24：url=http://127.0.0.1:8000/rank/
+参数: {'number': -1, 'start': 1, 'stop': None}, body: None
+测试24结果: status=200, response=[[5, 200], [3, 102], [2, 100], [1, 100]]  响应时间：2.992391586303711ms
+测试25：url=http://127.0.0.1:8000/rank/
+参数: {'number': -1, 'start': 1, 'stop': ''}, body: None
+测试25结果: status=200, response=[[5, 200], [3, 102], [2, 100], [1, 100]]  响应时间：2.991914749145508ms
+测试26：url=http://127.0.0.1:8000/rank/
+参数: {'number': -1, 'start': 1, 'stop': '1'}, body: None
+测试26结果: status=200, response=[[5, 200]]  响应时间：2.991914749145508ms
+测试27：url=http://127.0.0.1:8000/rank/
+参数: {'number': -1, 'start': 1, 'stop': 'a'}, body: None
+测试27结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：1.9948482513427734ms
+测试28：url=http://127.0.0.1:8000/rank/
+参数: {'number': -1, 'start': 10, 'stop': -1}, body: None
+测试28结果: status=200, response=[]  响应时间：2.992391586303711ms
+测试29：url=http://127.0.0.1:8000/rank/
+参数: {'number': -1, 'start': 10, 'stop': 0}, body: None
+测试29结果: status=200, response=[]  响应时间：3.988981246948242ms
+测试30：url=http://127.0.0.1:8000/rank/
+参数: {'number': -1, 'start': 10, 'stop': 5}, body: None
+测试30结果: status=200, response=[]  响应时间：2.991914749145508ms
+测试31：url=http://127.0.0.1:8000/rank/
+参数: {'number': -1, 'start': 10, 'stop': 10}, body: None
+测试31结果: status=200, response=[]  响应时间：2.9916763305664062ms
+测试32：url=http://127.0.0.1:8000/rank/
+参数: {'number': -1, 'start': 10, 'stop': 20}, body: None
+测试32结果: status=200, response=[]  响应时间：2.3164749145507812ms
+测试33：url=http://127.0.0.1:8000/rank/
+参数: {'number': -1, 'start': 10, 'stop': None}, body: None
+测试33结果: status=200, response=[]  响应时间：3.668546676635742ms
+测试34：url=http://127.0.0.1:8000/rank/
+参数: {'number': -1, 'start': 10, 'stop': ''}, body: None
+测试34结果: status=200, response=[]  响应时间：2.991199493408203ms
+测试35：url=http://127.0.0.1:8000/rank/
+参数: {'number': -1, 'start': 10, 'stop': '1'}, body: None
+测试35结果: status=200, response=[]  响应时间：2.991914749145508ms
+测试36：url=http://127.0.0.1:8000/rank/
+参数: {'number': -1, 'start': 10, 'stop': 'a'}, body: None
+测试36结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：2.9921531677246094ms
+测试37：url=http://127.0.0.1:8000/rank/
+参数: {'number': -1, 'start': None, 'stop': -1}, body: None
+测试37结果: status=200, response=[[6, 200], [5, 200], [3, 102], [2, 100], [1, 100]]  响应时间：2.9921531677246094ms
+测试38：url=http://127.0.0.1:8000/rank/
+参数: {'number': -1, 'start': None, 'stop': 0}, body: None
+测试38结果: status=200, response=[[6, 200]]  响应时间：2.991914749145508ms
+测试39：url=http://127.0.0.1:8000/rank/
+参数: {'number': -1, 'start': None, 'stop': 5}, body: None
+测试39结果: status=200, response=[[6, 200], [5, 200], [3, 102], [2, 100], [1, 100]]  响应时间：2.991914749145508ms
+测试40：url=http://127.0.0.1:8000/rank/
+参数: {'number': -1, 'start': None, 'stop': 10}, body: None
+测试40结果: status=200, response=[[6, 200], [5, 200], [3, 102], [2, 100], [1, 100]]  响应时间：2.991914749145508ms
+测试41：url=http://127.0.0.1:8000/rank/
+参数: {'number': -1, 'start': None, 'stop': 20}, body: None
+测试41结果: status=200, response=[[6, 200], [5, 200], [3, 102], [2, 100], [1, 100]]  响应时间：2.9921531677246094ms
+测试42：url=http://127.0.0.1:8000/rank/
+参数: {'number': -1, 'start': None, 'stop': None}, body: None
+测试42结果: status=200, response=[[6, 200], [5, 200], [3, 102], [2, 100], [1, 100]]  响应时间：2.9921531677246094ms
+测试43：url=http://127.0.0.1:8000/rank/
+参数: {'number': -1, 'start': None, 'stop': ''}, body: None
+测试43结果: status=200, response=[[6, 200], [5, 200], [3, 102], [2, 100], [1, 100]]  响应时间：2.991914749145508ms
+测试44：url=http://127.0.0.1:8000/rank/
+参数: {'number': -1, 'start': None, 'stop': '1'}, body: None
+测试44结果: status=200, response=[[6, 200], [5, 200]]  响应时间：3.9892196655273438ms
+测试45：url=http://127.0.0.1:8000/rank/
+参数: {'number': -1, 'start': None, 'stop': 'a'}, body: None
+测试45结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：1.9948482513427734ms
+测试46：url=http://127.0.0.1:8000/rank/
+参数: {'number': -1, 'start': '', 'stop': -1}, body: None
+测试46结果: status=200, response=[[6, 200], [5, 200], [3, 102], [2, 100], [1, 100]]  响应时间：2.991914749145508ms
+测试47：url=http://127.0.0.1:8000/rank/
+参数: {'number': -1, 'start': '', 'stop': 0}, body: None
+测试47结果: status=200, response=[[6, 200]]  响应时间：2.9916763305664062ms
+测试48：url=http://127.0.0.1:8000/rank/
+参数: {'number': -1, 'start': '', 'stop': 5}, body: None
+测试48结果: status=200, response=[[6, 200], [5, 200], [3, 102], [2, 100], [1, 100]]  响应时间：3.989696502685547ms
+测试49：url=http://127.0.0.1:8000/rank/
+参数: {'number': -1, 'start': '', 'stop': 10}, body: None
+测试49结果: status=200, response=[[6, 200], [5, 200], [3, 102], [2, 100], [1, 100]]  响应时间：2.992391586303711ms
+测试50：url=http://127.0.0.1:8000/rank/
+参数: {'number': -1, 'start': '', 'stop': 20}, body: None
+测试50结果: status=200, response=[[6, 200], [5, 200], [3, 102], [2, 100], [1, 100]]  响应时间：3.988504409790039ms
+测试51：url=http://127.0.0.1:8000/rank/
+参数: {'number': -1, 'start': '', 'stop': None}, body: None
+测试51结果: status=200, response=[[6, 200], [5, 200], [3, 102], [2, 100], [1, 100]]  响应时间：2.9921531677246094ms
+测试52：url=http://127.0.0.1:8000/rank/
+参数: {'number': -1, 'start': '', 'stop': ''}, body: None
+测试52结果: status=200, response=[[6, 200], [5, 200], [3, 102], [2, 100], [1, 100]]  响应时间：2.9921531677246094ms
+测试53：url=http://127.0.0.1:8000/rank/
+参数: {'number': -1, 'start': '', 'stop': '1'}, body: None
+测试53结果: status=200, response=[[6, 200], [5, 200]]  响应时间：2.991914749145508ms
+测试54：url=http://127.0.0.1:8000/rank/
+参数: {'number': -1, 'start': '', 'stop': 'a'}, body: None
+测试54结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：1.9948482513427734ms
+测试55：url=http://127.0.0.1:8000/rank/
+参数: {'number': -1, 'start': '1', 'stop': -1}, body: None
+测试55结果: status=200, response=[[5, 200], [3, 102], [2, 100], [1, 100]]  响应时间：2.991914749145508ms
+测试56：url=http://127.0.0.1:8000/rank/
+参数: {'number': -1, 'start': '1', 'stop': 0}, body: None
+测试56结果: status=200, response=[]  响应时间：3.9894580841064453ms
+测试57：url=http://127.0.0.1:8000/rank/
+参数: {'number': -1, 'start': '1', 'stop': 5}, body: None
+测试57结果: status=200, response=[[5, 200], [3, 102], [2, 100], [1, 100]]  响应时间：2.9914379119873047ms
+测试58：url=http://127.0.0.1:8000/rank/
+参数: {'number': -1, 'start': '1', 'stop': 10}, body: None
+测试58结果: status=200, response=[[5, 200], [3, 102], [2, 100], [1, 100]]  响应时间：2.992391586303711ms
+测试59：url=http://127.0.0.1:8000/rank/
+参数: {'number': -1, 'start': '1', 'stop': 20}, body: None
+测试59结果: status=200, response=[[5, 200], [3, 102], [2, 100], [1, 100]]  响应时间：2.9921531677246094ms
+测试60：url=http://127.0.0.1:8000/rank/
+参数: {'number': -1, 'start': '1', 'stop': None}, body: None
+测试60结果: status=200, response=[[5, 200], [3, 102], [2, 100], [1, 100]]  响应时间：2.991914749145508ms
+测试61：url=http://127.0.0.1:8000/rank/
+参数: {'number': -1, 'start': '1', 'stop': ''}, body: None
+测试61结果: status=200, response=[[5, 200], [3, 102], [2, 100], [1, 100]]  响应时间：2.991914749145508ms
+测试62：url=http://127.0.0.1:8000/rank/
+参数: {'number': -1, 'start': '1', 'stop': '1'}, body: None
+测试62结果: status=200, response=[[5, 200]]  响应时间：2.9916763305664062ms
+测试63：url=http://127.0.0.1:8000/rank/
+参数: {'number': -1, 'start': '1', 'stop': 'a'}, body: None
+测试63结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：2.992391586303711ms
+测试64：url=http://127.0.0.1:8000/rank/
+参数: {'number': -1, 'start': '20', 'stop': -1}, body: None
+测试64结果: status=200, response=[]  响应时间：2.9916763305664062ms
+测试65：url=http://127.0.0.1:8000/rank/
+参数: {'number': -1, 'start': '20', 'stop': 0}, body: None
+测试65结果: status=200, response=[]  响应时间：2.9921531677246094ms
+测试66：url=http://127.0.0.1:8000/rank/
+参数: {'number': -1, 'start': '20', 'stop': 5}, body: None
+测试66结果: status=200, response=[]  响应时间：2.9921531677246094ms
+测试67：url=http://127.0.0.1:8000/rank/
+参数: {'number': -1, 'start': '20', 'stop': 10}, body: None
+测试67结果: status=200, response=[]  响应时间：2.9916763305664062ms
+测试68：url=http://127.0.0.1:8000/rank/
+参数: {'number': -1, 'start': '20', 'stop': 20}, body: None
+测试68结果: status=200, response=[]  响应时间：2.992391586303711ms
+测试69：url=http://127.0.0.1:8000/rank/
+参数: {'number': -1, 'start': '20', 'stop': None}, body: None
+测试69结果: status=200, response=[]  响应时间：3.989696502685547ms
+测试70：url=http://127.0.0.1:8000/rank/
+参数: {'number': -1, 'start': '20', 'stop': ''}, body: None
+测试70结果: status=200, response=[]  响应时间：2.991914749145508ms
+测试71：url=http://127.0.0.1:8000/rank/
+参数: {'number': -1, 'start': '20', 'stop': '1'}, body: None
+测试71结果: status=200, response=[]  响应时间：2.9916763305664062ms
+测试72：url=http://127.0.0.1:8000/rank/
+参数: {'number': -1, 'start': '20', 'stop': 'a'}, body: None
+测试72结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：2.9921531677246094ms
+测试73：url=http://127.0.0.1:8000/rank/
+参数: {'number': -1, 'start': 'a', 'stop': -1}, body: None
+测试73结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：2.9914379119873047ms
+测试74：url=http://127.0.0.1:8000/rank/
+参数: {'number': -1, 'start': 'a', 'stop': 0}, body: None
+测试74结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：1.9948482513427734ms
+测试75：url=http://127.0.0.1:8000/rank/
+参数: {'number': -1, 'start': 'a', 'stop': 5}, body: None
+测试75结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：1.995086669921875ms
+测试76：url=http://127.0.0.1:8000/rank/
+参数: {'number': -1, 'start': 'a', 'stop': 10}, body: None
+测试76结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：1.9943714141845703ms
+测试77：url=http://127.0.0.1:8000/rank/
+参数: {'number': -1, 'start': 'a', 'stop': 20}, body: None
+测试77结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：2.991914749145508ms
+测试78：url=http://127.0.0.1:8000/rank/
+参数: {'number': -1, 'start': 'a', 'stop': None}, body: None
+测试78结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：1.9953250885009766ms
+测试79：url=http://127.0.0.1:8000/rank/
+参数: {'number': -1, 'start': 'a', 'stop': ''}, body: None
+测试79结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：2.991199493408203ms
+测试80：url=http://127.0.0.1:8000/rank/
+参数: {'number': -1, 'start': 'a', 'stop': '1'}, body: None
+测试80结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：1.9948482513427734ms
+测试81：url=http://127.0.0.1:8000/rank/
+参数: {'number': -1, 'start': 'a', 'stop': 'a'}, body: None
+测试81结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：1.9948482513427734ms
+测试82：url=http://127.0.0.1:8000/rank/
+参数: {'number': 0, 'start': -1, 'stop': -1}, body: None
+测试82结果: status=200, response=[[1, 100]]  响应时间：2.991914749145508ms
+测试83：url=http://127.0.0.1:8000/rank/
+参数: {'number': 0, 'start': -1, 'stop': 0}, body: None
+测试83结果: status=200, response=[]  响应时间：3.9894580841064453ms
+测试84：url=http://127.0.0.1:8000/rank/
+参数: {'number': 0, 'start': -1, 'stop': 5}, body: None
+测试84结果: status=200, response=[[1, 100]]  响应时间：2.9916763305664062ms
+测试85：url=http://127.0.0.1:8000/rank/
+参数: {'number': 0, 'start': -1, 'stop': 10}, body: None
+测试85结果: status=200, response=[[1, 100]]  响应时间：2.9921531677246094ms
+测试86：url=http://127.0.0.1:8000/rank/
+参数: {'number': 0, 'start': -1, 'stop': 20}, body: None
+测试86结果: status=200, response=[[1, 100]]  响应时间：2.9921531677246094ms
+测试87：url=http://127.0.0.1:8000/rank/
+参数: {'number': 0, 'start': -1, 'stop': None}, body: None
+测试87结果: status=200, response=[[1, 100]]  响应时间：1.9946098327636719ms
+测试88：url=http://127.0.0.1:8000/rank/
+参数: {'number': 0, 'start': -1, 'stop': ''}, body: None
+测试88结果: status=200, response=[[1, 100]]  响应时间：2.9921531677246094ms
+测试89：url=http://127.0.0.1:8000/rank/
+参数: {'number': 0, 'start': -1, 'stop': '1'}, body: None
+测试89结果: status=200, response=[]  响应时间：2.9914379119873047ms
+测试90：url=http://127.0.0.1:8000/rank/
+参数: {'number': 0, 'start': -1, 'stop': 'a'}, body: None
+测试90结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：2.9921531677246094ms
+测试91：url=http://127.0.0.1:8000/rank/
+参数: {'number': 0, 'start': 0, 'stop': -1}, body: None
+测试91结果: status=200, response=[[6, 200], [5, 200], [3, 102], [2, 100], [1, 100]]  响应时间：1.9948482513427734ms
+测试92：url=http://127.0.0.1:8000/rank/
+参数: {'number': 0, 'start': 0, 'stop': 0}, body: None
+测试92结果: status=200, response=[[6, 200]]  响应时间：3.9892196655273438ms
+测试93：url=http://127.0.0.1:8000/rank/
+参数: {'number': 0, 'start': 0, 'stop': 5}, body: None
+测试93结果: status=200, response=[[6, 200], [5, 200], [3, 102], [2, 100], [1, 100]]  响应时间：2.9921531677246094ms
+测试94：url=http://127.0.0.1:8000/rank/
+参数: {'number': 0, 'start': 0, 'stop': 10}, body: None
+测试94结果: status=200, response=[[6, 200], [5, 200], [3, 102], [2, 100], [1, 100]]  响应时间：2.9921531677246094ms
+测试95：url=http://127.0.0.1:8000/rank/
+参数: {'number': 0, 'start': 0, 'stop': 20}, body: None
+测试95结果: status=200, response=[[6, 200], [5, 200], [3, 102], [2, 100], [1, 100]]  响应时间：2.991914749145508ms
+测试96：url=http://127.0.0.1:8000/rank/
+参数: {'number': 0, 'start': 0, 'stop': None}, body: None
+测试96结果: status=200, response=[[6, 200], [5, 200], [3, 102], [2, 100], [1, 100]]  响应时间：2.9916763305664062ms
+测试97：url=http://127.0.0.1:8000/rank/
+参数: {'number': 0, 'start': 0, 'stop': ''}, body: None
+测试97结果: status=200, response=[[6, 200], [5, 200], [3, 102], [2, 100], [1, 100]]  响应时间：2.9921531677246094ms
+测试98：url=http://127.0.0.1:8000/rank/
+参数: {'number': 0, 'start': 0, 'stop': '1'}, body: None
+测试98结果: status=200, response=[[6, 200], [5, 200]]  响应时间：2.2318363189697266ms
+测试99：url=http://127.0.0.1:8000/rank/
+参数: {'number': 0, 'start': 0, 'stop': 'a'}, body: None
+测试99结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：2.7549266815185547ms
+测试100：url=http://127.0.0.1:8000/rank/
+参数: {'number': 0, 'start': 1, 'stop': -1}, body: None
+测试100结果: status=200, response=[[5, 200], [3, 102], [2, 100], [1, 100]]  响应时间：2.9916763305664062ms
+测试101：url=http://127.0.0.1:8000/rank/
+参数: {'number': 0, 'start': 1, 'stop': 0}, body: None
+测试101结果: status=200, response=[]  响应时间：1.995086669921875ms
+测试102：url=http://127.0.0.1:8000/rank/
+参数: {'number': 0, 'start': 1, 'stop': 5}, body: None
+测试102结果: status=200, response=[[5, 200], [3, 102], [2, 100], [1, 100]]  响应时间：3.9892196655273438ms
+测试103：url=http://127.0.0.1:8000/rank/
+参数: {'number': 0, 'start': 1, 'stop': 10}, body: None
+测试103结果: status=200, response=[[5, 200], [3, 102], [2, 100], [1, 100]]  响应时间：1.9946098327636719ms
+测试104：url=http://127.0.0.1:8000/rank/
+参数: {'number': 0, 'start': 1, 'stop': 20}, body: None
+测试104结果: status=200, response=[[5, 200], [3, 102], [2, 100], [1, 100]]  响应时间：1.9948482513427734ms
+测试105：url=http://127.0.0.1:8000/rank/
+参数: {'number': 0, 'start': 1, 'stop': None}, body: None
+测试105结果: status=200, response=[[5, 200], [3, 102], [2, 100], [1, 100]]  响应时间：5.984067916870117ms
+测试106：url=http://127.0.0.1:8000/rank/
+参数: {'number': 0, 'start': 1, 'stop': ''}, body: None
+测试106结果: status=200, response=[[5, 200], [3, 102], [2, 100], [1, 100]]  响应时间：2.9916763305664062ms
+测试107：url=http://127.0.0.1:8000/rank/
+参数: {'number': 0, 'start': 1, 'stop': '1'}, body: None
+测试107结果: status=200, response=[[5, 200]]  响应时间：2.9926300048828125ms
+测试108：url=http://127.0.0.1:8000/rank/
+参数: {'number': 0, 'start': 1, 'stop': 'a'}, body: None
+测试108结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：2.9916763305664062ms
+测试109：url=http://127.0.0.1:8000/rank/
+参数: {'number': 0, 'start': 10, 'stop': -1}, body: None
+测试109结果: status=200, response=[]  响应时间：2.9921531677246094ms
+测试110：url=http://127.0.0.1:8000/rank/
+参数: {'number': 0, 'start': 10, 'stop': 0}, body: None
+测试110结果: status=200, response=[]  响应时间：2.9916763305664062ms
+测试111：url=http://127.0.0.1:8000/rank/
+参数: {'number': 0, 'start': 10, 'stop': 5}, body: None
+测试111结果: status=200, response=[]  响应时间：2.9916763305664062ms
+测试112：url=http://127.0.0.1:8000/rank/
+参数: {'number': 0, 'start': 10, 'stop': 10}, body: None
+测试112结果: status=200, response=[]  响应时间：1.995086669921875ms
+测试113：url=http://127.0.0.1:8000/rank/
+参数: {'number': 0, 'start': 10, 'stop': 20}, body: None
+测试113结果: status=200, response=[]  响应时间：2.9916763305664062ms
+测试114：url=http://127.0.0.1:8000/rank/
+参数: {'number': 0, 'start': 10, 'stop': None}, body: None
+测试114结果: status=200, response=[]  响应时间：3.9894580841064453ms
+测试115：url=http://127.0.0.1:8000/rank/
+参数: {'number': 0, 'start': 10, 'stop': ''}, body: None
+测试115结果: status=200, response=[]  响应时间：2.991914749145508ms
+测试116：url=http://127.0.0.1:8000/rank/
+参数: {'number': 0, 'start': 10, 'stop': '1'}, body: None
+测试116结果: status=200, response=[]  响应时间：2.9921531677246094ms
+测试117：url=http://127.0.0.1:8000/rank/
+参数: {'number': 0, 'start': 10, 'stop': 'a'}, body: None
+测试117结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：1.9943714141845703ms
+测试118：url=http://127.0.0.1:8000/rank/
+参数: {'number': 0, 'start': None, 'stop': -1}, body: None
+测试118结果: status=200, response=[[6, 200], [5, 200], [3, 102], [2, 100], [1, 100]]  响应时间：2.9926300048828125ms
+测试119：url=http://127.0.0.1:8000/rank/
+参数: {'number': 0, 'start': None, 'stop': 0}, body: None
+测试119结果: status=200, response=[[6, 200]]  响应时间：2.9916763305664062ms
+测试120：url=http://127.0.0.1:8000/rank/
+参数: {'number': 0, 'start': None, 'stop': 5}, body: None
+测试120结果: status=200, response=[[6, 200], [5, 200], [3, 102], [2, 100], [1, 100]]  响应时间：2.9921531677246094ms
+测试121：url=http://127.0.0.1:8000/rank/
+参数: {'number': 0, 'start': None, 'stop': 10}, body: None
+测试121结果: status=200, response=[[6, 200], [5, 200], [3, 102], [2, 100], [1, 100]]  响应时间：3.9894580841064453ms
+测试122：url=http://127.0.0.1:8000/rank/
+参数: {'number': 0, 'start': None, 'stop': 20}, body: None
+测试122结果: status=200, response=[[6, 200], [5, 200], [3, 102], [2, 100], [1, 100]]  响应时间：2.991914749145508ms
+测试123：url=http://127.0.0.1:8000/rank/
+参数: {'number': 0, 'start': None, 'stop': None}, body: None
+测试123结果: status=200, response=[[6, 200], [5, 200], [3, 102], [2, 100], [1, 100]]  响应时间：3.9892196655273438ms
+测试124：url=http://127.0.0.1:8000/rank/
+参数: {'number': 0, 'start': None, 'stop': ''}, body: None
+测试124结果: status=200, response=[[6, 200], [5, 200], [3, 102], [2, 100], [1, 100]]  响应时间：2.9921531677246094ms
+测试125：url=http://127.0.0.1:8000/rank/
+参数: {'number': 0, 'start': None, 'stop': '1'}, body: None
+测试125结果: status=200, response=[[6, 200], [5, 200]]  响应时间：2.9914379119873047ms
+测试126：url=http://127.0.0.1:8000/rank/
+参数: {'number': 0, 'start': None, 'stop': 'a'}, body: None
+测试126结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：2.992391586303711ms
+测试127：url=http://127.0.0.1:8000/rank/
+参数: {'number': 0, 'start': '', 'stop': -1}, body: None
+测试127结果: status=200, response=[[6, 200], [5, 200], [3, 102], [2, 100], [1, 100]]  响应时间：2.9921531677246094ms
+测试128：url=http://127.0.0.1:8000/rank/
+参数: {'number': 0, 'start': '', 'stop': 0}, body: None
+测试128结果: status=200, response=[[6, 200]]  响应时间：1.9943714141845703ms
+测试129：url=http://127.0.0.1:8000/rank/
+参数: {'number': 0, 'start': '', 'stop': 5}, body: None
+测试129结果: status=200, response=[[6, 200], [5, 200], [3, 102], [2, 100], [1, 100]]  响应时间：2.9921531677246094ms
+测试130：url=http://127.0.0.1:8000/rank/
+参数: {'number': 0, 'start': '', 'stop': 10}, body: None
+测试130结果: status=200, response=[[6, 200], [5, 200], [3, 102], [2, 100], [1, 100]]  响应时间：2.9916763305664062ms
+测试131：url=http://127.0.0.1:8000/rank/
+参数: {'number': 0, 'start': '', 'stop': 20}, body: None
+测试131结果: status=200, response=[[6, 200], [5, 200], [3, 102], [2, 100], [1, 100]]  响应时间：2.991914749145508ms
+测试132：url=http://127.0.0.1:8000/rank/
+参数: {'number': 0, 'start': '', 'stop': None}, body: None
+测试132结果: status=200, response=[[6, 200], [5, 200], [3, 102], [2, 100], [1, 100]]  响应时间：1.9948482513427734ms
+测试133：url=http://127.0.0.1:8000/rank/
+参数: {'number': 0, 'start': '', 'stop': ''}, body: None
+测试133结果: status=200, response=[[6, 200], [5, 200], [3, 102], [2, 100], [1, 100]]  响应时间：3.2188892364501953ms
+测试134：url=http://127.0.0.1:8000/rank/
+参数: {'number': 0, 'start': '', 'stop': '1'}, body: None
+测试134结果: status=200, response=[[6, 200], [5, 200]]  响应时间：3.7627220153808594ms
+测试135：url=http://127.0.0.1:8000/rank/
+参数: {'number': 0, 'start': '', 'stop': 'a'}, body: None
+测试135结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：1.9946098327636719ms
+测试136：url=http://127.0.0.1:8000/rank/
+参数: {'number': 0, 'start': '1', 'stop': -1}, body: None
+测试136结果: status=200, response=[[5, 200], [3, 102], [2, 100], [1, 100]]  响应时间：2.9916763305664062ms
+测试137：url=http://127.0.0.1:8000/rank/
+参数: {'number': 0, 'start': '1', 'stop': 0}, body: None
+测试137结果: status=200, response=[]  响应时间：2.9921531677246094ms
+测试138：url=http://127.0.0.1:8000/rank/
+参数: {'number': 0, 'start': '1', 'stop': 5}, body: None
+测试138结果: status=200, response=[[5, 200], [3, 102], [2, 100], [1, 100]]  响应时间：3.988981246948242ms
+测试139：url=http://127.0.0.1:8000/rank/
+参数: {'number': 0, 'start': '1', 'stop': 10}, body: None
+测试139结果: status=200, response=[[5, 200], [3, 102], [2, 100], [1, 100]]  响应时间：3.9892196655273438ms
+测试140：url=http://127.0.0.1:8000/rank/
+参数: {'number': 0, 'start': '1', 'stop': 20}, body: None
+测试140结果: status=200, response=[[5, 200], [3, 102], [2, 100], [1, 100]]  响应时间：2.9921531677246094ms
+测试141：url=http://127.0.0.1:8000/rank/
+参数: {'number': 0, 'start': '1', 'stop': None}, body: None
+测试141结果: status=200, response=[[5, 200], [3, 102], [2, 100], [1, 100]]  响应时间：2.992391586303711ms
+测试142：url=http://127.0.0.1:8000/rank/
+参数: {'number': 0, 'start': '1', 'stop': ''}, body: None
+测试142结果: status=200, response=[[5, 200], [3, 102], [2, 100], [1, 100]]  响应时间：1.9943714141845703ms
+测试143：url=http://127.0.0.1:8000/rank/
+参数: {'number': 0, 'start': '1', 'stop': '1'}, body: None
+测试143结果: status=200, response=[[5, 200]]  响应时间：2.9914379119873047ms
+测试144：url=http://127.0.0.1:8000/rank/
+参数: {'number': 0, 'start': '1', 'stop': 'a'}, body: None
+测试144结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：1.995086669921875ms
+测试145：url=http://127.0.0.1:8000/rank/
+参数: {'number': 0, 'start': '20', 'stop': -1}, body: None
+测试145结果: status=200, response=[]  响应时间：2.9921531677246094ms
+测试146：url=http://127.0.0.1:8000/rank/
+参数: {'number': 0, 'start': '20', 'stop': 0}, body: None
+测试146结果: status=200, response=[]  响应时间：2.991914749145508ms
+测试147：url=http://127.0.0.1:8000/rank/
+参数: {'number': 0, 'start': '20', 'stop': 5}, body: None
+测试147结果: status=200, response=[]  响应时间：2.991914749145508ms
+测试148：url=http://127.0.0.1:8000/rank/
+参数: {'number': 0, 'start': '20', 'stop': 10}, body: None
+测试148结果: status=200, response=[]  响应时间：2.992391586303711ms
+测试149：url=http://127.0.0.1:8000/rank/
+参数: {'number': 0, 'start': '20', 'stop': 20}, body: None
+测试149结果: status=200, response=[]  响应时间：2.9916763305664062ms
+测试150：url=http://127.0.0.1:8000/rank/
+参数: {'number': 0, 'start': '20', 'stop': None}, body: None
+测试150结果: status=200, response=[]  响应时间：2.991914749145508ms
+测试151：url=http://127.0.0.1:8000/rank/
+参数: {'number': 0, 'start': '20', 'stop': ''}, body: None
+测试151结果: status=200, response=[]  响应时间：2.991914749145508ms
+测试152：url=http://127.0.0.1:8000/rank/
+参数: {'number': 0, 'start': '20', 'stop': '1'}, body: None
+测试152结果: status=200, response=[]  响应时间：2.991914749145508ms
+测试153：url=http://127.0.0.1:8000/rank/
+参数: {'number': 0, 'start': '20', 'stop': 'a'}, body: None
+测试153结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：1.995086669921875ms
+测试154：url=http://127.0.0.1:8000/rank/
+参数: {'number': 0, 'start': 'a', 'stop': -1}, body: None
+测试154结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：1.9946098327636719ms
+测试155：url=http://127.0.0.1:8000/rank/
+参数: {'number': 0, 'start': 'a', 'stop': 0}, body: None
+测试155结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：2.0079612731933594ms
+测试156：url=http://127.0.0.1:8000/rank/
+参数: {'number': 0, 'start': 'a', 'stop': 5}, body: None
+测试156结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：1.9943714141845703ms
+测试157：url=http://127.0.0.1:8000/rank/
+参数: {'number': 0, 'start': 'a', 'stop': 10}, body: None
+测试157结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：1.9948482513427734ms
+测试158：url=http://127.0.0.1:8000/rank/
+参数: {'number': 0, 'start': 'a', 'stop': 20}, body: None
+测试158结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：1.9948482513427734ms
+测试159：url=http://127.0.0.1:8000/rank/
+参数: {'number': 0, 'start': 'a', 'stop': None}, body: None
+测试159结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：2.9921531677246094ms
+测试160：url=http://127.0.0.1:8000/rank/
+参数: {'number': 0, 'start': 'a', 'stop': ''}, body: None
+测试160结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：1.9943714141845703ms
+测试161：url=http://127.0.0.1:8000/rank/
+参数: {'number': 0, 'start': 'a', 'stop': '1'}, body: None
+测试161结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：1.9943714141845703ms
+测试162：url=http://127.0.0.1:8000/rank/
+参数: {'number': 0, 'start': 'a', 'stop': 'a'}, body: None
+测试162结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：2.992391586303711ms
+测试163：url=http://127.0.0.1:8000/rank/
+参数: {'number': 1, 'start': -1, 'stop': -1}, body: None
+测试163结果: status=200, response=[[1, 100], [1, 100]]  响应时间：1.9946098327636719ms
+测试164：url=http://127.0.0.1:8000/rank/
+参数: {'number': 1, 'start': -1, 'stop': 0}, body: None
+测试164结果: status=200, response=[[1, 100]]  响应时间：2.992391586303711ms
+测试165：url=http://127.0.0.1:8000/rank/
+参数: {'number': 1, 'start': -1, 'stop': 5}, body: None
+测试165结果: status=200, response=[[1, 100], [1, 100]]  响应时间：2.9916763305664062ms
+测试166：url=http://127.0.0.1:8000/rank/
+参数: {'number': 1, 'start': -1, 'stop': 10}, body: None
+测试166结果: status=200, response=[[1, 100], [1, 100]]  响应时间：2.991914749145508ms
+测试167：url=http://127.0.0.1:8000/rank/
+参数: {'number': 1, 'start': -1, 'stop': 20}, body: None
+测试167结果: status=200, response=[[1, 100], [1, 100]]  响应时间：2.9921531677246094ms
+测试168：url=http://127.0.0.1:8000/rank/
+参数: {'number': 1, 'start': -1, 'stop': None}, body: None
+测试168结果: status=200, response=[[1, 100], [1, 100]]  响应时间：2.991914749145508ms
+测试169：url=http://127.0.0.1:8000/rank/
+参数: {'number': 1, 'start': -1, 'stop': ''}, body: None
+测试169结果: status=200, response=[[1, 100], [1, 100]]  响应时间：2.991914749145508ms
+测试170：url=http://127.0.0.1:8000/rank/
+参数: {'number': 1, 'start': -1, 'stop': '1'}, body: None
+测试170结果: status=200, response=[[1, 100]]  响应时间：2.992868423461914ms
+测试171：url=http://127.0.0.1:8000/rank/
+参数: {'number': 1, 'start': -1, 'stop': 'a'}, body: None
+测试171结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：2.991199493408203ms
+测试172：url=http://127.0.0.1:8000/rank/
+参数: {'number': 1, 'start': 0, 'stop': -1}, body: None
+测试172结果: status=200, response=[[6, 200], [5, 200], [3, 102], [2, 100], [1, 100], [1, 100]]  响应时间：2.9916763305664062ms
+测试173：url=http://127.0.0.1:8000/rank/
+参数: {'number': 1, 'start': 0, 'stop': 0}, body: None
+测试173结果: status=200, response=[[6, 200], [1, 100]]  响应时间：2.9921531677246094ms
+测试174：url=http://127.0.0.1:8000/rank/
+参数: {'number': 1, 'start': 0, 'stop': 5}, body: None
+测试174结果: status=200, response=[[6, 200], [5, 200], [3, 102], [2, 100], [1, 100], [1, 100]]  响应时间：2.992868423461914ms
+测试175：url=http://127.0.0.1:8000/rank/
+参数: {'number': 1, 'start': 0, 'stop': 10}, body: None
+测试175结果: status=200, response=[[6, 200], [5, 200], [3, 102], [2, 100], [1, 100], [1, 100]]  响应时间：3.9887428283691406ms
+测试176：url=http://127.0.0.1:8000/rank/
+参数: {'number': 1, 'start': 0, 'stop': 20}, body: None
+测试176结果: status=200, response=[[6, 200], [5, 200], [3, 102], [2, 100], [1, 100], [1, 100]]  响应时间：2.991914749145508ms
+测试177：url=http://127.0.0.1:8000/rank/
+参数: {'number': 1, 'start': 0, 'stop': None}, body: None
+测试177结果: status=200, response=[[6, 200], [5, 200], [3, 102], [2, 100], [1, 100], [1, 100]]  响应时间：2.991914749145508ms
+测试178：url=http://127.0.0.1:8000/rank/
+参数: {'number': 1, 'start': 0, 'stop': ''}, body: None
+测试178结果: status=200, response=[[6, 200], [5, 200], [3, 102], [2, 100], [1, 100], [1, 100]]  响应时间：2.9921531677246094ms
+测试179：url=http://127.0.0.1:8000/rank/
+参数: {'number': 1, 'start': 0, 'stop': '1'}, body: None
+测试179结果: status=200, response=[[6, 200], [5, 200], [1, 100]]  响应时间：3.9894580841064453ms
+测试180：url=http://127.0.0.1:8000/rank/
+参数: {'number': 1, 'start': 0, 'stop': 'a'}, body: None
+测试180结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：2.991914749145508ms
+测试181：url=http://127.0.0.1:8000/rank/
+参数: {'number': 1, 'start': 1, 'stop': -1}, body: None
+测试181结果: status=200, response=[[5, 200], [3, 102], [2, 100], [1, 100], [1, 100]]  响应时间：2.991914749145508ms
+测试182：url=http://127.0.0.1:8000/rank/
+参数: {'number': 1, 'start': 1, 'stop': 0}, body: None
+测试182结果: status=200, response=[[1, 100]]  响应时间：3.9894580841064453ms
+测试183：url=http://127.0.0.1:8000/rank/
+参数: {'number': 1, 'start': 1, 'stop': 5}, body: None
+测试183结果: status=200, response=[[5, 200], [3, 102], [2, 100], [1, 100], [1, 100]]  响应时间：1.9943714141845703ms
+测试184：url=http://127.0.0.1:8000/rank/
+参数: {'number': 1, 'start': 1, 'stop': 10}, body: None
+测试184结果: status=200, response=[[5, 200], [3, 102], [2, 100], [1, 100], [1, 100]]  响应时间：2.9921531677246094ms
+测试185：url=http://127.0.0.1:8000/rank/
+参数: {'number': 1, 'start': 1, 'stop': 20}, body: None
+测试185结果: status=200, response=[[5, 200], [3, 102], [2, 100], [1, 100], [1, 100]]  响应时间：2.9921531677246094ms
+测试186：url=http://127.0.0.1:8000/rank/
+参数: {'number': 1, 'start': 1, 'stop': None}, body: None
+测试186结果: status=200, response=[[5, 200], [3, 102], [2, 100], [1, 100], [1, 100]]  响应时间：2.991914749145508ms
+测试187：url=http://127.0.0.1:8000/rank/
+参数: {'number': 1, 'start': 1, 'stop': ''}, body: None
+测试187结果: status=200, response=[[5, 200], [3, 102], [2, 100], [1, 100], [1, 100]]  响应时间：2.9914379119873047ms
+测试188：url=http://127.0.0.1:8000/rank/
+参数: {'number': 1, 'start': 1, 'stop': '1'}, body: None
+测试188结果: status=200, response=[[5, 200], [1, 100]]  响应时间：2.992391586303711ms
+测试189：url=http://127.0.0.1:8000/rank/
+参数: {'number': 1, 'start': 1, 'stop': 'a'}, body: None
+测试189结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：1.9948482513427734ms
+测试190：url=http://127.0.0.1:8000/rank/
+参数: {'number': 1, 'start': 10, 'stop': -1}, body: None
+测试190结果: status=200, response=[[1, 100]]  响应时间：2.9921531677246094ms
+测试191：url=http://127.0.0.1:8000/rank/
+参数: {'number': 1, 'start': 10, 'stop': 0}, body: None
+测试191结果: status=200, response=[[1, 100]]  响应时间：2.991914749145508ms
+测试192：url=http://127.0.0.1:8000/rank/
+参数: {'number': 1, 'start': 10, 'stop': 5}, body: None
+测试192结果: status=200, response=[[1, 100]]  响应时间：2.9921531677246094ms
+测试193：url=http://127.0.0.1:8000/rank/
+参数: {'number': 1, 'start': 10, 'stop': 10}, body: None
+测试193结果: status=200, response=[[1, 100]]  响应时间：2.9916763305664062ms
+测试194：url=http://127.0.0.1:8000/rank/
+参数: {'number': 1, 'start': 10, 'stop': 20}, body: None
+测试194结果: status=200, response=[[1, 100]]  响应时间：2.9916763305664062ms
+测试195：url=http://127.0.0.1:8000/rank/
+参数: {'number': 1, 'start': 10, 'stop': None}, body: None
+测试195结果: status=200, response=[[1, 100]]  响应时间：2.9921531677246094ms
+测试196：url=http://127.0.0.1:8000/rank/
+参数: {'number': 1, 'start': 10, 'stop': ''}, body: None
+测试196结果: status=200, response=[[1, 100]]  响应时间：1.995086669921875ms
+测试197：url=http://127.0.0.1:8000/rank/
+参数: {'number': 1, 'start': 10, 'stop': '1'}, body: None
+测试197结果: status=200, response=[[1, 100]]  响应时间：2.991914749145508ms
+测试198：url=http://127.0.0.1:8000/rank/
+参数: {'number': 1, 'start': 10, 'stop': 'a'}, body: None
+测试198结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：1.9946098327636719ms
+测试199：url=http://127.0.0.1:8000/rank/
+参数: {'number': 1, 'start': None, 'stop': -1}, body: None
+测试199结果: status=200, response=[[6, 200], [5, 200], [3, 102], [2, 100], [1, 100], [1, 100]]  响应时间：2.9916763305664062ms
+测试200：url=http://127.0.0.1:8000/rank/
+参数: {'number': 1, 'start': None, 'stop': 0}, body: None
+测试200结果: status=200, response=[[6, 200], [1, 100]]  响应时间：2.992391586303711ms
+测试201：url=http://127.0.0.1:8000/rank/
+参数: {'number': 1, 'start': None, 'stop': 5}, body: None
+测试201结果: status=200, response=[[6, 200], [5, 200], [3, 102], [2, 100], [1, 100], [1, 100]]  响应时间：2.991914749145508ms
+测试202：url=http://127.0.0.1:8000/rank/
+参数: {'number': 1, 'start': None, 'stop': 10}, body: None
+测试202结果: status=200, response=[[6, 200], [5, 200], [3, 102], [2, 100], [1, 100], [1, 100]]  响应时间：3.9894580841064453ms
+测试203：url=http://127.0.0.1:8000/rank/
+参数: {'number': 1, 'start': None, 'stop': 20}, body: None
+测试203结果: status=200, response=[[6, 200], [5, 200], [3, 102], [2, 100], [1, 100], [1, 100]]  响应时间：3.9892196655273438ms
+测试204：url=http://127.0.0.1:8000/rank/
+参数: {'number': 1, 'start': None, 'stop': None}, body: None
+测试204结果: status=200, response=[[6, 200], [5, 200], [3, 102], [2, 100], [1, 100], [1, 100]]  响应时间：2.991914749145508ms
+测试205：url=http://127.0.0.1:8000/rank/
+参数: {'number': 1, 'start': None, 'stop': ''}, body: None
+测试205结果: status=200, response=[[6, 200], [5, 200], [3, 102], [2, 100], [1, 100], [1, 100]]  响应时间：2.992391586303711ms
+测试206：url=http://127.0.0.1:8000/rank/
+参数: {'number': 1, 'start': None, 'stop': '1'}, body: None
+测试206结果: status=200, response=[[6, 200], [5, 200], [1, 100]]  响应时间：2.9916763305664062ms
+测试207：url=http://127.0.0.1:8000/rank/
+参数: {'number': 1, 'start': None, 'stop': 'a'}, body: None
+测试207结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：1.9946098327636719ms
+测试208：url=http://127.0.0.1:8000/rank/
+参数: {'number': 1, 'start': '', 'stop': -1}, body: None
+测试208结果: status=200, response=[[6, 200], [5, 200], [3, 102], [2, 100], [1, 100], [1, 100]]  响应时间：3.989696502685547ms
+测试209：url=http://127.0.0.1:8000/rank/
+参数: {'number': 1, 'start': '', 'stop': 0}, body: None
+测试209结果: status=200, response=[[6, 200], [1, 100]]  响应时间：3.988981246948242ms
+测试210：url=http://127.0.0.1:8000/rank/
+参数: {'number': 1, 'start': '', 'stop': 5}, body: None
+测试210结果: status=200, response=[[6, 200], [5, 200], [3, 102], [2, 100], [1, 100], [1, 100]]  响应时间：2.991914749145508ms
+测试211：url=http://127.0.0.1:8000/rank/
+参数: {'number': 1, 'start': '', 'stop': 10}, body: None
+测试211结果: status=200, response=[[6, 200], [5, 200], [3, 102], [2, 100], [1, 100], [1, 100]]  响应时间：1.9946098327636719ms
+测试212：url=http://127.0.0.1:8000/rank/
+参数: {'number': 1, 'start': '', 'stop': 20}, body: None
+测试212结果: status=200, response=[[6, 200], [5, 200], [3, 102], [2, 100], [1, 100], [1, 100]]  响应时间：3.9894580841064453ms
+测试213：url=http://127.0.0.1:8000/rank/
+参数: {'number': 1, 'start': '', 'stop': None}, body: None
+测试213结果: status=200, response=[[6, 200], [5, 200], [3, 102], [2, 100], [1, 100], [1, 100]]  响应时间：3.9894580841064453ms
+测试214：url=http://127.0.0.1:8000/rank/
+参数: {'number': 1, 'start': '', 'stop': ''}, body: None
+测试214结果: status=200, response=[[6, 200], [5, 200], [3, 102], [2, 100], [1, 100], [1, 100]]  响应时间：3.9894580841064453ms
+测试215：url=http://127.0.0.1:8000/rank/
+参数: {'number': 1, 'start': '', 'stop': '1'}, body: None
+测试215结果: status=200, response=[[6, 200], [5, 200], [1, 100]]  响应时间：2.9916763305664062ms
+测试216：url=http://127.0.0.1:8000/rank/
+参数: {'number': 1, 'start': '', 'stop': 'a'}, body: None
+测试216结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：2.9921531677246094ms
+测试217：url=http://127.0.0.1:8000/rank/
+参数: {'number': 1, 'start': '1', 'stop': -1}, body: None
+测试217结果: status=200, response=[[5, 200], [3, 102], [2, 100], [1, 100], [1, 100]]  响应时间：4.988670349121094ms
+测试218：url=http://127.0.0.1:8000/rank/
+参数: {'number': 1, 'start': '1', 'stop': 0}, body: None
+测试218结果: status=200, response=[[1, 100]]  响应时间：3.9870738983154297ms
+测试219：url=http://127.0.0.1:8000/rank/
+参数: {'number': 1, 'start': '1', 'stop': 5}, body: None
+测试219结果: status=200, response=[[5, 200], [3, 102], [2, 100], [1, 100], [1, 100]]  响应时间：3.9894580841064453ms
+测试220：url=http://127.0.0.1:8000/rank/
+参数: {'number': 1, 'start': '1', 'stop': 10}, body: None
+测试220结果: status=200, response=[[5, 200], [3, 102], [2, 100], [1, 100], [1, 100]]  响应时间：2.991914749145508ms
+测试221：url=http://127.0.0.1:8000/rank/
+参数: {'number': 1, 'start': '1', 'stop': 20}, body: None
+测试221结果: status=200, response=[[5, 200], [3, 102], [2, 100], [1, 100], [1, 100]]  响应时间：3.989696502685547ms
+测试222：url=http://127.0.0.1:8000/rank/
+参数: {'number': 1, 'start': '1', 'stop': None}, body: None
+测试222结果: status=200, response=[[5, 200], [3, 102], [2, 100], [1, 100], [1, 100]]  响应时间：3.988981246948242ms
+测试223：url=http://127.0.0.1:8000/rank/
+参数: {'number': 1, 'start': '1', 'stop': ''}, body: None
+测试223结果: status=200, response=[[5, 200], [3, 102], [2, 100], [1, 100], [1, 100]]  响应时间：3.9894580841064453ms
+测试224：url=http://127.0.0.1:8000/rank/
+参数: {'number': 1, 'start': '1', 'stop': '1'}, body: None
+测试224结果: status=200, response=[[5, 200], [1, 100]]  响应时间：2.991914749145508ms
+测试225：url=http://127.0.0.1:8000/rank/
+参数: {'number': 1, 'start': '1', 'stop': 'a'}, body: None
+测试225结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：1.995086669921875ms
+测试226：url=http://127.0.0.1:8000/rank/
+参数: {'number': 1, 'start': '20', 'stop': -1}, body: None
+测试226结果: status=200, response=[[1, 100]]  响应时间：3.9887428283691406ms
+测试227：url=http://127.0.0.1:8000/rank/
+参数: {'number': 1, 'start': '20', 'stop': 0}, body: None
+测试227结果: status=200, response=[[1, 100]]  响应时间：3.9899349212646484ms
+测试228：url=http://127.0.0.1:8000/rank/
+参数: {'number': 1, 'start': '20', 'stop': 5}, body: None
+测试228结果: status=200, response=[[1, 100]]  响应时间：3.988981246948242ms
+测试229：url=http://127.0.0.1:8000/rank/
+参数: {'number': 1, 'start': '20', 'stop': 10}, body: None
+测试229结果: status=200, response=[[1, 100]]  响应时间：3.9892196655273438ms
+测试230：url=http://127.0.0.1:8000/rank/
+参数: {'number': 1, 'start': '20', 'stop': 20}, body: None
+测试230结果: status=200, response=[[1, 100]]  响应时间：2.9921531677246094ms
+测试231：url=http://127.0.0.1:8000/rank/
+参数: {'number': 1, 'start': '20', 'stop': None}, body: None
+测试231结果: status=200, response=[[1, 100]]  响应时间：2.9921531677246094ms
+测试232：url=http://127.0.0.1:8000/rank/
+参数: {'number': 1, 'start': '20', 'stop': ''}, body: None
+测试232结果: status=200, response=[[1, 100]]  响应时间：2.991199493408203ms
+测试233：url=http://127.0.0.1:8000/rank/
+参数: {'number': 1, 'start': '20', 'stop': '1'}, body: None
+测试233结果: status=200, response=[[1, 100]]  响应时间：2.9926300048828125ms
+测试234：url=http://127.0.0.1:8000/rank/
+参数: {'number': 1, 'start': '20', 'stop': 'a'}, body: None
+测试234结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：2.992391586303711ms
+测试235：url=http://127.0.0.1:8000/rank/
+参数: {'number': 1, 'start': 'a', 'stop': -1}, body: None
+测试235结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：1.9946098327636719ms
+测试236：url=http://127.0.0.1:8000/rank/
+参数: {'number': 1, 'start': 'a', 'stop': 0}, body: None
+测试236结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：3.9899349212646484ms
+测试237：url=http://127.0.0.1:8000/rank/
+参数: {'number': 1, 'start': 'a', 'stop': 5}, body: None
+测试237结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：2.991199493408203ms
+测试238：url=http://127.0.0.1:8000/rank/
+参数: {'number': 1, 'start': 'a', 'stop': 10}, body: None
+测试238结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：2.9916763305664062ms
+测试239：url=http://127.0.0.1:8000/rank/
+参数: {'number': 1, 'start': 'a', 'stop': 20}, body: None
+测试239结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：1.9948482513427734ms
+测试240：url=http://127.0.0.1:8000/rank/
+参数: {'number': 1, 'start': 'a', 'stop': None}, body: None
+测试240结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：1.9948482513427734ms
+测试241：url=http://127.0.0.1:8000/rank/
+参数: {'number': 1, 'start': 'a', 'stop': ''}, body: None
+测试241结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：2.9921531677246094ms
+测试242：url=http://127.0.0.1:8000/rank/
+参数: {'number': 1, 'start': 'a', 'stop': '1'}, body: None
+测试242结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：2.991914749145508ms
+测试243：url=http://127.0.0.1:8000/rank/
+参数: {'number': 1, 'start': 'a', 'stop': 'a'}, body: None
+测试243结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：2.991914749145508ms
+测试244：url=http://127.0.0.1:8000/rank/
+参数: {'number': 10, 'start': -1, 'stop': -1}, body: None
+测试244结果: status=200, response=[[1, 100]]  响应时间：2.991914749145508ms
+测试245：url=http://127.0.0.1:8000/rank/
+参数: {'number': 10, 'start': -1, 'stop': 0}, body: None
+测试245结果: status=200, response=[]  响应时间：2.9926300048828125ms
+测试246：url=http://127.0.0.1:8000/rank/
+参数: {'number': 10, 'start': -1, 'stop': 5}, body: None
+测试246结果: status=200, response=[[1, 100]]  响应时间：2.9916763305664062ms
+测试247：url=http://127.0.0.1:8000/rank/
+参数: {'number': 10, 'start': -1, 'stop': 10}, body: None
+测试247结果: status=200, response=[[1, 100]]  响应时间：3.988981246948242ms
+测试248：url=http://127.0.0.1:8000/rank/
+参数: {'number': 10, 'start': -1, 'stop': 20}, body: None
+测试248结果: status=200, response=[[1, 100]]  响应时间：2.991914749145508ms
+测试249：url=http://127.0.0.1:8000/rank/
+参数: {'number': 10, 'start': -1, 'stop': None}, body: None
+测试249结果: status=200, response=[[1, 100]]  响应时间：2.992391586303711ms
+测试250：url=http://127.0.0.1:8000/rank/
+参数: {'number': 10, 'start': -1, 'stop': ''}, body: None
+测试250结果: status=200, response=[[1, 100]]  响应时间：3.9894580841064453ms
+测试251：url=http://127.0.0.1:8000/rank/
+参数: {'number': 10, 'start': -1, 'stop': '1'}, body: None
+测试251结果: status=200, response=[]  响应时间：2.9914379119873047ms
+测试252：url=http://127.0.0.1:8000/rank/
+参数: {'number': 10, 'start': -1, 'stop': 'a'}, body: None
+测试252结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：2.992391586303711ms
+测试253：url=http://127.0.0.1:8000/rank/
+参数: {'number': 10, 'start': 0, 'stop': -1}, body: None
+测试253结果: status=200, response=[[6, 200], [5, 200], [3, 102], [2, 100], [1, 100]]  响应时间：3.988981246948242ms
+测试254：url=http://127.0.0.1:8000/rank/
+参数: {'number': 10, 'start': 0, 'stop': 0}, body: None
+测试254结果: status=200, response=[[6, 200]]  响应时间：2.9921531677246094ms
+测试255：url=http://127.0.0.1:8000/rank/
+参数: {'number': 10, 'start': 0, 'stop': 5}, body: None
+测试255结果: status=200, response=[[6, 200], [5, 200], [3, 102], [2, 100], [1, 100]]  响应时间：2.9916763305664062ms
+测试256：url=http://127.0.0.1:8000/rank/
+参数: {'number': 10, 'start': 0, 'stop': 10}, body: None
+测试256结果: status=200, response=[[6, 200], [5, 200], [3, 102], [2, 100], [1, 100]]  响应时间：2.9926300048828125ms
+测试257：url=http://127.0.0.1:8000/rank/
+参数: {'number': 10, 'start': 0, 'stop': 20}, body: None
+测试257结果: status=200, response=[[6, 200], [5, 200], [3, 102], [2, 100], [1, 100]]  响应时间：3.9894580841064453ms
+测试258：url=http://127.0.0.1:8000/rank/
+参数: {'number': 10, 'start': 0, 'stop': None}, body: None
+测试258结果: status=200, response=[[6, 200], [5, 200], [3, 102], [2, 100], [1, 100]]  响应时间：3.9887428283691406ms
+测试259：url=http://127.0.0.1:8000/rank/
+参数: {'number': 10, 'start': 0, 'stop': ''}, body: None
+测试259结果: status=200, response=[[6, 200], [5, 200], [3, 102], [2, 100], [1, 100]]  响应时间：2.992391586303711ms
+测试260：url=http://127.0.0.1:8000/rank/
+参数: {'number': 10, 'start': 0, 'stop': '1'}, body: None
+测试260结果: status=200, response=[[6, 200], [5, 200]]  响应时间：3.9887428283691406ms
+测试261：url=http://127.0.0.1:8000/rank/
+参数: {'number': 10, 'start': 0, 'stop': 'a'}, body: None
+测试261结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：1.9953250885009766ms
+测试262：url=http://127.0.0.1:8000/rank/
+参数: {'number': 10, 'start': 1, 'stop': -1}, body: None
+测试262结果: status=200, response=[[5, 200], [3, 102], [2, 100], [1, 100]]  响应时间：3.268718719482422ms
+测试263：url=http://127.0.0.1:8000/rank/
+参数: {'number': 10, 'start': 1, 'stop': 0}, body: None
+测试263结果: status=200, response=[]  响应时间：3.7124156951904297ms
+测试264：url=http://127.0.0.1:8000/rank/
+参数: {'number': 10, 'start': 1, 'stop': 5}, body: None
+测试264结果: status=200, response=[[5, 200], [3, 102], [2, 100], [1, 100]]  响应时间：2.992391586303711ms
+测试265：url=http://127.0.0.1:8000/rank/
+参数: {'number': 10, 'start': 1, 'stop': 10}, body: None
+测试265结果: status=200, response=[[5, 200], [3, 102], [2, 100], [1, 100]]  响应时间：2.991199493408203ms
+测试266：url=http://127.0.0.1:8000/rank/
+参数: {'number': 10, 'start': 1, 'stop': 20}, body: None
+测试266结果: status=200, response=[[5, 200], [3, 102], [2, 100], [1, 100]]  响应时间：3.9899349212646484ms
+测试267：url=http://127.0.0.1:8000/rank/
+参数: {'number': 10, 'start': 1, 'stop': None}, body: None
+测试267结果: status=200, response=[[5, 200], [3, 102], [2, 100], [1, 100]]  响应时间：2.9914379119873047ms
+测试268：url=http://127.0.0.1:8000/rank/
+参数: {'number': 10, 'start': 1, 'stop': ''}, body: None
+测试268结果: status=200, response=[[5, 200], [3, 102], [2, 100], [1, 100]]  响应时间：5.985021591186523ms
+测试269：url=http://127.0.0.1:8000/rank/
+参数: {'number': 10, 'start': 1, 'stop': '1'}, body: None
+测试269结果: status=200, response=[[5, 200]]  响应时间：3.988504409790039ms
+测试270：url=http://127.0.0.1:8000/rank/
+参数: {'number': 10, 'start': 1, 'stop': 'a'}, body: None
+测试270结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：2.991914749145508ms
+测试271：url=http://127.0.0.1:8000/rank/
+参数: {'number': 10, 'start': 10, 'stop': -1}, body: None
+测试271结果: status=200, response=[]  响应时间：2.991914749145508ms
+测试272：url=http://127.0.0.1:8000/rank/
+参数: {'number': 10, 'start': 10, 'stop': 0}, body: None
+测试272结果: status=200, response=[]  响应时间：3.9892196655273438ms
+测试273：url=http://127.0.0.1:8000/rank/
+参数: {'number': 10, 'start': 10, 'stop': 5}, body: None
+测试273结果: status=200, response=[]  响应时间：2.9921531677246094ms
+测试274：url=http://127.0.0.1:8000/rank/
+参数: {'number': 10, 'start': 10, 'stop': 10}, body: None
+测试274结果: status=200, response=[]  响应时间：3.9892196655273438ms
+测试275：url=http://127.0.0.1:8000/rank/
+参数: {'number': 10, 'start': 10, 'stop': 20}, body: None
+测试275结果: status=200, response=[]  响应时间：2.9921531677246094ms
+测试276：url=http://127.0.0.1:8000/rank/
+参数: {'number': 10, 'start': 10, 'stop': None}, body: None
+测试276结果: status=200, response=[]  响应时间：2.991914749145508ms
+测试277：url=http://127.0.0.1:8000/rank/
+参数: {'number': 10, 'start': 10, 'stop': ''}, body: None
+测试277结果: status=200, response=[]  响应时间：3.9894580841064453ms
+测试278：url=http://127.0.0.1:8000/rank/
+参数: {'number': 10, 'start': 10, 'stop': '1'}, body: None
+测试278结果: status=200, response=[]  响应时间：2.992391586303711ms
+测试279：url=http://127.0.0.1:8000/rank/
+参数: {'number': 10, 'start': 10, 'stop': 'a'}, body: None
+测试279结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：2.9916763305664062ms
+测试280：url=http://127.0.0.1:8000/rank/
+参数: {'number': 10, 'start': None, 'stop': -1}, body: None
+测试280结果: status=200, response=[[6, 200], [5, 200], [3, 102], [2, 100], [1, 100]]  响应时间：2.991914749145508ms
+测试281：url=http://127.0.0.1:8000/rank/
+参数: {'number': 10, 'start': None, 'stop': 0}, body: None
+测试281结果: status=200, response=[[6, 200]]  响应时间：2.992391586303711ms
+测试282：url=http://127.0.0.1:8000/rank/
+参数: {'number': 10, 'start': None, 'stop': 5}, body: None
+测试282结果: status=200, response=[[6, 200], [5, 200], [3, 102], [2, 100], [1, 100]]  响应时间：3.9892196655273438ms
+测试283：url=http://127.0.0.1:8000/rank/
+参数: {'number': 10, 'start': None, 'stop': 10}, body: None
+测试283结果: status=200, response=[[6, 200], [5, 200], [3, 102], [2, 100], [1, 100]]  响应时间：2.992868423461914ms
+测试284：url=http://127.0.0.1:8000/rank/
+参数: {'number': 10, 'start': None, 'stop': 20}, body: None
+测试284结果: status=200, response=[[6, 200], [5, 200], [3, 102], [2, 100], [1, 100]]  响应时间：2.9909610748291016ms
+测试285：url=http://127.0.0.1:8000/rank/
+参数: {'number': 10, 'start': None, 'stop': None}, body: None
+测试285结果: status=200, response=[[6, 200], [5, 200], [3, 102], [2, 100], [1, 100]]  响应时间：2.991914749145508ms
+测试286：url=http://127.0.0.1:8000/rank/
+参数: {'number': 10, 'start': None, 'stop': ''}, body: None
+测试286结果: status=200, response=[[6, 200], [5, 200], [3, 102], [2, 100], [1, 100]]  响应时间：2.9921531677246094ms
+测试287：url=http://127.0.0.1:8000/rank/
+参数: {'number': 10, 'start': None, 'stop': '1'}, body: None
+测试287结果: status=200, response=[[6, 200], [5, 200]]  响应时间：3.9894580841064453ms
+测试288：url=http://127.0.0.1:8000/rank/
+参数: {'number': 10, 'start': None, 'stop': 'a'}, body: None
+测试288结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：1.9948482513427734ms
+测试289：url=http://127.0.0.1:8000/rank/
+参数: {'number': 10, 'start': '', 'stop': -1}, body: None
+测试289结果: status=200, response=[[6, 200], [5, 200], [3, 102], [2, 100], [1, 100]]  响应时间：3.9892196655273438ms
+测试290：url=http://127.0.0.1:8000/rank/
+参数: {'number': 10, 'start': '', 'stop': 0}, body: None
+测试290结果: status=200, response=[[6, 200]]  响应时间：2.9916763305664062ms
+测试291：url=http://127.0.0.1:8000/rank/
+参数: {'number': 10, 'start': '', 'stop': 5}, body: None
+测试291结果: status=200, response=[[6, 200], [5, 200], [3, 102], [2, 100], [1, 100]]  响应时间：2.991914749145508ms
+测试292：url=http://127.0.0.1:8000/rank/
+参数: {'number': 10, 'start': '', 'stop': 10}, body: None
+测试292结果: status=200, response=[[6, 200], [5, 200], [3, 102], [2, 100], [1, 100]]  响应时间：2.9931068420410156ms
+测试293：url=http://127.0.0.1:8000/rank/
+参数: {'number': 10, 'start': '', 'stop': 20}, body: None
+测试293结果: status=200, response=[[6, 200], [5, 200], [3, 102], [2, 100], [1, 100]]  响应时间：3.988981246948242ms
+测试294：url=http://127.0.0.1:8000/rank/
+参数: {'number': 10, 'start': '', 'stop': None}, body: None
+测试294结果: status=200, response=[[6, 200], [5, 200], [3, 102], [2, 100], [1, 100]]  响应时间：2.991914749145508ms
+测试295：url=http://127.0.0.1:8000/rank/
+参数: {'number': 10, 'start': '', 'stop': ''}, body: None
+测试295结果: status=200, response=[[6, 200], [5, 200], [3, 102], [2, 100], [1, 100]]  响应时间：3.989696502685547ms
+测试296：url=http://127.0.0.1:8000/rank/
+参数: {'number': 10, 'start': '', 'stop': '1'}, body: None
+测试296结果: status=200, response=[[6, 200], [5, 200]]  响应时间：2.9909610748291016ms
+测试297：url=http://127.0.0.1:8000/rank/
+参数: {'number': 10, 'start': '', 'stop': 'a'}, body: None
+测试297结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：2.9931068420410156ms
+测试298：url=http://127.0.0.1:8000/rank/
+参数: {'number': 10, 'start': '1', 'stop': -1}, body: None
+测试298结果: status=200, response=[[5, 200], [3, 102], [2, 100], [1, 100]]  响应时间：3.988981246948242ms
+测试299：url=http://127.0.0.1:8000/rank/
+参数: {'number': 10, 'start': '1', 'stop': 0}, body: None
+测试299结果: status=200, response=[]  响应时间：3.9887428283691406ms
+测试300：url=http://127.0.0.1:8000/rank/
+参数: {'number': 10, 'start': '1', 'stop': 5}, body: None
+测试300结果: status=200, response=[[5, 200], [3, 102], [2, 100], [1, 100]]  响应时间：3.9894580841064453ms
+测试301：url=http://127.0.0.1:8000/rank/
+参数: {'number': 10, 'start': '1', 'stop': 10}, body: None
+测试301结果: status=200, response=[[5, 200], [3, 102], [2, 100], [1, 100]]  响应时间：2.9921531677246094ms
+测试302：url=http://127.0.0.1:8000/rank/
+参数: {'number': 10, 'start': '1', 'stop': 20}, body: None
+测试302结果: status=200, response=[[5, 200], [3, 102], [2, 100], [1, 100]]  响应时间：3.989696502685547ms
+测试303：url=http://127.0.0.1:8000/rank/
+参数: {'number': 10, 'start': '1', 'stop': None}, body: None
+测试303结果: status=200, response=[[5, 200], [3, 102], [2, 100], [1, 100]]  响应时间：2.9916763305664062ms
+测试304：url=http://127.0.0.1:8000/rank/
+参数: {'number': 10, 'start': '1', 'stop': ''}, body: None
+测试304结果: status=200, response=[[5, 200], [3, 102], [2, 100], [1, 100]]  响应时间：2.9914379119873047ms
+测试305：url=http://127.0.0.1:8000/rank/
+参数: {'number': 10, 'start': '1', 'stop': '1'}, body: None
+测试305结果: status=200, response=[[5, 200]]  响应时间：2.992391586303711ms
+测试306：url=http://127.0.0.1:8000/rank/
+参数: {'number': 10, 'start': '1', 'stop': 'a'}, body: None
+测试306结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：2.9921531677246094ms
+测试307：url=http://127.0.0.1:8000/rank/
+参数: {'number': 10, 'start': '20', 'stop': -1}, body: None
+测试307结果: status=200, response=[]  响应时间：2.991914749145508ms
+测试308：url=http://127.0.0.1:8000/rank/
+参数: {'number': 10, 'start': '20', 'stop': 0}, body: None
+测试308结果: status=200, response=[]  响应时间：2.9921531677246094ms
+测试309：url=http://127.0.0.1:8000/rank/
+参数: {'number': 10, 'start': '20', 'stop': 5}, body: None
+测试309结果: status=200, response=[]  响应时间：2.9921531677246094ms
+测试310：url=http://127.0.0.1:8000/rank/
+参数: {'number': 10, 'start': '20', 'stop': 10}, body: None
+测试310结果: status=200, response=[]  响应时间：2.991914749145508ms
+测试311：url=http://127.0.0.1:8000/rank/
+参数: {'number': 10, 'start': '20', 'stop': 20}, body: None
+测试311结果: status=200, response=[]  响应时间：3.988981246948242ms
+测试312：url=http://127.0.0.1:8000/rank/
+参数: {'number': 10, 'start': '20', 'stop': None}, body: None
+测试312结果: status=200, response=[]  响应时间：2.9926300048828125ms
+测试313：url=http://127.0.0.1:8000/rank/
+参数: {'number': 10, 'start': '20', 'stop': ''}, body: None
+测试313结果: status=200, response=[]  响应时间：2.9914379119873047ms
+测试314：url=http://127.0.0.1:8000/rank/
+参数: {'number': 10, 'start': '20', 'stop': '1'}, body: None
+测试314结果: status=200, response=[]  响应时间：3.9894580841064453ms
+测试315：url=http://127.0.0.1:8000/rank/
+参数: {'number': 10, 'start': '20', 'stop': 'a'}, body: None
+测试315结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：2.992391586303711ms
+测试316：url=http://127.0.0.1:8000/rank/
+参数: {'number': 10, 'start': 'a', 'stop': -1}, body: None
+测试316结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：1.9943714141845703ms
+测试317：url=http://127.0.0.1:8000/rank/
+参数: {'number': 10, 'start': 'a', 'stop': 0}, body: None
+测试317结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：1.9948482513427734ms
+测试318：url=http://127.0.0.1:8000/rank/
+参数: {'number': 10, 'start': 'a', 'stop': 5}, body: None
+测试318结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：2.9921531677246094ms
+测试319：url=http://127.0.0.1:8000/rank/
+参数: {'number': 10, 'start': 'a', 'stop': 10}, body: None
+测试319结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：1.9943714141845703ms
+测试320：url=http://127.0.0.1:8000/rank/
+参数: {'number': 10, 'start': 'a', 'stop': 20}, body: None
+测试320结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：2.9916763305664062ms
+测试321：url=http://127.0.0.1:8000/rank/
+参数: {'number': 10, 'start': 'a', 'stop': None}, body: None
+测试321结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：1.995086669921875ms
+测试322：url=http://127.0.0.1:8000/rank/
+参数: {'number': 10, 'start': 'a', 'stop': ''}, body: None
+测试322结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：2.9921531677246094ms
+测试323：url=http://127.0.0.1:8000/rank/
+参数: {'number': 10, 'start': 'a', 'stop': '1'}, body: None
+测试323结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：1.9943714141845703ms
+测试324：url=http://127.0.0.1:8000/rank/
+参数: {'number': 10, 'start': 'a', 'stop': 'a'}, body: None
+测试324结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：1.9948482513427734ms
+测试325：url=http://127.0.0.1:8000/rank/
+参数: {'number': None, 'start': -1, 'stop': -1}, body: None
+测试325结果: status=400, response={'detail': "don't pass client number"}  响应时间：3.0541419982910156ms
+测试326：url=http://127.0.0.1:8000/rank/
+参数: {'number': None, 'start': -1, 'stop': 0}, body: None
+测试326结果: status=400, response={'detail': "don't pass client number"}  响应时间：2.9294490814208984ms
+测试327：url=http://127.0.0.1:8000/rank/
+参数: {'number': None, 'start': -1, 'stop': 5}, body: None
+测试327结果: status=400, response={'detail': "don't pass client number"}  响应时间：1.9948482513427734ms
+测试328：url=http://127.0.0.1:8000/rank/
+参数: {'number': None, 'start': -1, 'stop': 10}, body: None
+测试328结果: status=400, response={'detail': "don't pass client number"}  响应时间：1.9948482513427734ms
+测试329：url=http://127.0.0.1:8000/rank/
+参数: {'number': None, 'start': -1, 'stop': 20}, body: None
+测试329结果: status=400, response={'detail': "don't pass client number"}  响应时间：1.9943714141845703ms
+测试330：url=http://127.0.0.1:8000/rank/
+参数: {'number': None, 'start': -1, 'stop': None}, body: None
+测试330结果: status=400, response={'detail': "don't pass client number"}  响应时间：1.995086669921875ms
+测试331：url=http://127.0.0.1:8000/rank/
+参数: {'number': None, 'start': -1, 'stop': ''}, body: None
+测试331结果: status=400, response={'detail': "don't pass client number"}  响应时间：2.9916763305664062ms
+测试332：url=http://127.0.0.1:8000/rank/
+参数: {'number': None, 'start': -1, 'stop': '1'}, body: None
+测试332结果: status=400, response={'detail': "don't pass client number"}  响应时间：1.9946098327636719ms
+测试333：url=http://127.0.0.1:8000/rank/
+参数: {'number': None, 'start': -1, 'stop': 'a'}, body: None
+测试333结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：1.995086669921875ms
+测试334：url=http://127.0.0.1:8000/rank/
+参数: {'number': None, 'start': 0, 'stop': -1}, body: None
+测试334结果: status=400, response={'detail': "don't pass client number"}  响应时间：1.9946098327636719ms
+测试335：url=http://127.0.0.1:8000/rank/
+参数: {'number': None, 'start': 0, 'stop': 0}, body: None
+测试335结果: status=400, response={'detail': "don't pass client number"}  响应时间：2.9926300048828125ms
+测试336：url=http://127.0.0.1:8000/rank/
+参数: {'number': None, 'start': 0, 'stop': 5}, body: None
+测试336结果: status=400, response={'detail': "don't pass client number"}  响应时间：2.991199493408203ms
+测试337：url=http://127.0.0.1:8000/rank/
+参数: {'number': None, 'start': 0, 'stop': 10}, body: None
+测试337结果: status=400, response={'detail': "don't pass client number"}  响应时间：1.995086669921875ms
+测试338：url=http://127.0.0.1:8000/rank/
+参数: {'number': None, 'start': 0, 'stop': 20}, body: None
+测试338结果: status=400, response={'detail': "don't pass client number"}  响应时间：2.9916763305664062ms
+测试339：url=http://127.0.0.1:8000/rank/
+参数: {'number': None, 'start': 0, 'stop': None}, body: None
+测试339结果: status=400, response={'detail': "don't pass client number"}  响应时间：1.9946098327636719ms
+测试340：url=http://127.0.0.1:8000/rank/
+参数: {'number': None, 'start': 0, 'stop': ''}, body: None
+测试340结果: status=400, response={'detail': "don't pass client number"}  响应时间：1.9946098327636719ms
+测试341：url=http://127.0.0.1:8000/rank/
+参数: {'number': None, 'start': 0, 'stop': '1'}, body: None
+测试341结果: status=400, response={'detail': "don't pass client number"}  响应时间：2.9921531677246094ms
+测试342：url=http://127.0.0.1:8000/rank/
+参数: {'number': None, 'start': 0, 'stop': 'a'}, body: None
+测试342结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：1.9948482513427734ms
+测试343：url=http://127.0.0.1:8000/rank/
+参数: {'number': None, 'start': 1, 'stop': -1}, body: None
+测试343结果: status=400, response={'detail': "don't pass client number"}  响应时间：1.9946098327636719ms
+测试344：url=http://127.0.0.1:8000/rank/
+参数: {'number': None, 'start': 1, 'stop': 0}, body: None
+测试344结果: status=400, response={'detail': "don't pass client number"}  响应时间：2.991914749145508ms
+测试345：url=http://127.0.0.1:8000/rank/
+参数: {'number': None, 'start': 1, 'stop': 5}, body: None
+测试345结果: status=400, response={'detail': "don't pass client number"}  响应时间：1.9946098327636719ms
+测试346：url=http://127.0.0.1:8000/rank/
+参数: {'number': None, 'start': 1, 'stop': 10}, body: None
+测试346结果: status=400, response={'detail': "don't pass client number"}  响应时间：1.995086669921875ms
+测试347：url=http://127.0.0.1:8000/rank/
+参数: {'number': None, 'start': 1, 'stop': 20}, body: None
+测试347结果: status=400, response={'detail': "don't pass client number"}  响应时间：2.9916763305664062ms
+测试348：url=http://127.0.0.1:8000/rank/
+参数: {'number': None, 'start': 1, 'stop': None}, body: None
+测试348结果: status=400, response={'detail': "don't pass client number"}  响应时间：1.9946098327636719ms
+测试349：url=http://127.0.0.1:8000/rank/
+参数: {'number': None, 'start': 1, 'stop': ''}, body: None
+测试349结果: status=400, response={'detail': "don't pass client number"}  响应时间：2.991914749145508ms
+测试350：url=http://127.0.0.1:8000/rank/
+参数: {'number': None, 'start': 1, 'stop': '1'}, body: None
+测试350结果: status=400, response={'detail': "don't pass client number"}  响应时间：2.991914749145508ms
+测试351：url=http://127.0.0.1:8000/rank/
+参数: {'number': None, 'start': 1, 'stop': 'a'}, body: None
+测试351结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：1.9948482513427734ms
+测试352：url=http://127.0.0.1:8000/rank/
+参数: {'number': None, 'start': 10, 'stop': -1}, body: None
+测试352结果: status=400, response={'detail': "don't pass client number"}  响应时间：1.9946098327636719ms
+测试353：url=http://127.0.0.1:8000/rank/
+参数: {'number': None, 'start': 10, 'stop': 0}, body: None
+测试353结果: status=400, response={'detail': "don't pass client number"}  响应时间：1.9948482513427734ms
+测试354：url=http://127.0.0.1:8000/rank/
+参数: {'number': None, 'start': 10, 'stop': 5}, body: None
+测试354结果: status=400, response={'detail': "don't pass client number"}  响应时间：1.9946098327636719ms
+测试355：url=http://127.0.0.1:8000/rank/
+参数: {'number': None, 'start': 10, 'stop': 10}, body: None
+测试355结果: status=400, response={'detail': "don't pass client number"}  响应时间：1.9946098327636719ms
+测试356：url=http://127.0.0.1:8000/rank/
+参数: {'number': None, 'start': 10, 'stop': 20}, body: None
+测试356结果: status=400, response={'detail': "don't pass client number"}  响应时间：1.9943714141845703ms
+测试357：url=http://127.0.0.1:8000/rank/
+参数: {'number': None, 'start': 10, 'stop': None}, body: None
+测试357结果: status=400, response={'detail': "don't pass client number"}  响应时间：1.9946098327636719ms
+测试358：url=http://127.0.0.1:8000/rank/
+参数: {'number': None, 'start': 10, 'stop': ''}, body: None
+测试358结果: status=400, response={'detail': "don't pass client number"}  响应时间：1.9948482513427734ms
+测试359：url=http://127.0.0.1:8000/rank/
+参数: {'number': None, 'start': 10, 'stop': '1'}, body: None
+测试359结果: status=400, response={'detail': "don't pass client number"}  响应时间：1.9946098327636719ms
+测试360：url=http://127.0.0.1:8000/rank/
+参数: {'number': None, 'start': 10, 'stop': 'a'}, body: None
+测试360结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：1.995086669921875ms
+测试361：url=http://127.0.0.1:8000/rank/
+参数: {'number': None, 'start': None, 'stop': -1}, body: None
+测试361结果: status=400, response={'detail': "don't pass client number"}  响应时间：1.995086669921875ms
+测试362：url=http://127.0.0.1:8000/rank/
+参数: {'number': None, 'start': None, 'stop': 0}, body: None
+测试362结果: status=400, response={'detail': "don't pass client number"}  响应时间：2.9916763305664062ms
+测试363：url=http://127.0.0.1:8000/rank/
+参数: {'number': None, 'start': None, 'stop': 5}, body: None
+测试363结果: status=400, response={'detail': "don't pass client number"}  响应时间：1.9948482513427734ms
+测试364：url=http://127.0.0.1:8000/rank/
+参数: {'number': None, 'start': None, 'stop': 10}, body: None
+测试364结果: status=400, response={'detail': "don't pass client number"}  响应时间：1.9948482513427734ms
+测试365：url=http://127.0.0.1:8000/rank/
+参数: {'number': None, 'start': None, 'stop': 20}, body: None
+测试365结果: status=400, response={'detail': "don't pass client number"}  响应时间：2.1371841430664062ms
+测试366：url=http://127.0.0.1:8000/rank/
+参数: {'number': None, 'start': None, 'stop': None}, body: None
+测试366结果: status=400, response={'detail': "don't pass client number"}  响应时间：2.0279884338378906ms
+测试367：url=http://127.0.0.1:8000/rank/
+参数: {'number': None, 'start': None, 'stop': ''}, body: None
+测试367结果: status=400, response={'detail': "don't pass client number"}  响应时间：1.9917488098144531ms
+测试368：url=http://127.0.0.1:8000/rank/
+参数: {'number': None, 'start': None, 'stop': '1'}, body: None
+测试368结果: status=400, response={'detail': "don't pass client number"}  响应时间：1.993417739868164ms
+测试369：url=http://127.0.0.1:8000/rank/
+参数: {'number': None, 'start': None, 'stop': 'a'}, body: None
+测试369结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：2.991914749145508ms
+测试370：url=http://127.0.0.1:8000/rank/
+参数: {'number': None, 'start': '', 'stop': -1}, body: None
+测试370结果: status=400, response={'detail': "don't pass client number"}  响应时间：1.9671916961669922ms
+测试371：url=http://127.0.0.1:8000/rank/
+参数: {'number': None, 'start': '', 'stop': 0}, body: None
+测试371结果: status=400, response={'detail': "don't pass client number"}  响应时间：1.9948482513427734ms
+测试372：url=http://127.0.0.1:8000/rank/
+参数: {'number': None, 'start': '', 'stop': 5}, body: None
+测试372结果: status=400, response={'detail': "don't pass client number"}  响应时间：2.022266387939453ms
+测试373：url=http://127.0.0.1:8000/rank/
+参数: {'number': None, 'start': '', 'stop': 10}, body: None
+测试373结果: status=400, response={'detail': "don't pass client number"}  响应时间：1.9674301147460938ms
+测试374：url=http://127.0.0.1:8000/rank/
+参数: {'number': None, 'start': '', 'stop': 20}, body: None
+测试374结果: status=400, response={'detail': "don't pass client number"}  响应时间：3.0171871185302734ms
+测试375：url=http://127.0.0.1:8000/rank/
+参数: {'number': None, 'start': '', 'stop': None}, body: None
+测试375结果: status=400, response={'detail': "don't pass client number"}  响应时间：2.9942989349365234ms
+测试376：url=http://127.0.0.1:8000/rank/
+参数: {'number': None, 'start': '', 'stop': ''}, body: None
+测试376结果: status=400, response={'detail': "don't pass client number"}  响应时间：1.9965171813964844ms
+测试377：url=http://127.0.0.1:8000/rank/
+参数: {'number': None, 'start': '', 'stop': '1'}, body: None
+测试377结果: status=400, response={'detail': "don't pass client number"}  响应时间：1.9650459289550781ms
+测试378：url=http://127.0.0.1:8000/rank/
+参数: {'number': None, 'start': '', 'stop': 'a'}, body: None
+测试378结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：2.9921531677246094ms
+测试379：url=http://127.0.0.1:8000/rank/
+参数: {'number': None, 'start': '1', 'stop': -1}, body: None
+测试379结果: status=400, response={'detail': "don't pass client number"}  响应时间：4.017353057861328ms
+测试380：url=http://127.0.0.1:8000/rank/
+参数: {'number': None, 'start': '1', 'stop': 0}, body: None
+测试380结果: status=400, response={'detail': "don't pass client number"}  响应时间：1.9938945770263672ms
+测试381：url=http://127.0.0.1:8000/rank/
+参数: {'number': None, 'start': '1', 'stop': 5}, body: None
+测试381结果: status=400, response={'detail': "don't pass client number"}  响应时间：2.9649734497070312ms
+测试382：url=http://127.0.0.1:8000/rank/
+参数: {'number': None, 'start': '1', 'stop': 10}, body: None
+测试382结果: status=400, response={'detail': "don't pass client number"}  响应时间：2.018451690673828ms
+测试383：url=http://127.0.0.1:8000/rank/
+参数: {'number': None, 'start': '1', 'stop': 20}, body: None
+测试383结果: status=400, response={'detail': "don't pass client number"}  响应时间：2.96783447265625ms
+测试384：url=http://127.0.0.1:8000/rank/
+参数: {'number': None, 'start': '1', 'stop': None}, body: None
+测试384结果: status=400, response={'detail': "don't pass client number"}  响应时间：2.02178955078125ms
+测试385：url=http://127.0.0.1:8000/rank/
+参数: {'number': None, 'start': '1', 'stop': ''}, body: None
+测试385结果: status=400, response={'detail': "don't pass client number"}  响应时间：1.9679069519042969ms
+测试386：url=http://127.0.0.1:8000/rank/
+参数: {'number': None, 'start': '1', 'stop': '1'}, body: None
+测试386结果: status=400, response={'detail': "don't pass client number"}  响应时间：3.019571304321289ms
+测试387：url=http://127.0.0.1:8000/rank/
+参数: {'number': None, 'start': '1', 'stop': 'a'}, body: None
+测试387结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：2.9647350311279297ms
+测试388：url=http://127.0.0.1:8000/rank/
+参数: {'number': None, 'start': '20', 'stop': -1}, body: None
+测试388结果: status=400, response={'detail': "don't pass client number"}  响应时间：3.0183792114257812ms
+测试389：url=http://127.0.0.1:8000/rank/
+参数: {'number': None, 'start': '20', 'stop': 0}, body: None
+测试389结果: status=400, response={'detail': "don't pass client number"}  响应时间：1.9671916961669922ms
+测试390：url=http://127.0.0.1:8000/rank/
+参数: {'number': None, 'start': '20', 'stop': 5}, body: None
+测试390结果: status=400, response={'detail': "don't pass client number"}  响应时间：3.021240234375ms
+测试391：url=http://127.0.0.1:8000/rank/
+参数: {'number': None, 'start': '20', 'stop': 10}, body: None
+测试391结果: status=400, response={'detail': "don't pass client number"}  响应时间：2.9938220977783203ms
+测试392：url=http://127.0.0.1:8000/rank/
+参数: {'number': None, 'start': '20', 'stop': 20}, body: None
+测试392结果: status=400, response={'detail': "don't pass client number"}  响应时间：1.99127197265625ms
+测试393：url=http://127.0.0.1:8000/rank/
+参数: {'number': None, 'start': '20', 'stop': None}, body: None
+测试393结果: status=400, response={'detail': "don't pass client number"}  响应时间：1.9915103912353516ms
+测试394：url=http://127.0.0.1:8000/rank/
+参数: {'number': None, 'start': '20', 'stop': ''}, body: None
+测试394结果: status=400, response={'detail': "don't pass client number"}  响应时间：1.9981861114501953ms
+测试395：url=http://127.0.0.1:8000/rank/
+参数: {'number': None, 'start': '20', 'stop': '1'}, body: None
+测试395结果: status=400, response={'detail': "don't pass client number"}  响应时间：1.9669532775878906ms
+测试396：url=http://127.0.0.1:8000/rank/
+参数: {'number': None, 'start': '20', 'stop': 'a'}, body: None
+测试396结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：2.992391586303711ms
+测试397：url=http://127.0.0.1:8000/rank/
+参数: {'number': None, 'start': 'a', 'stop': -1}, body: None
+测试397结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：2.0215511322021484ms
+测试398：url=http://127.0.0.1:8000/rank/
+参数: {'number': None, 'start': 'a', 'stop': 0}, body: None
+测试398结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：1.9953250885009766ms
+测试399：url=http://127.0.0.1:8000/rank/
+参数: {'number': None, 'start': 'a', 'stop': 5}, body: None
+测试399结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：1.9671916961669922ms
+测试400：url=http://127.0.0.1:8000/rank/
+参数: {'number': None, 'start': 'a', 'stop': 10}, body: None
+测试400结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：2.9914379119873047ms
+测试401：url=http://127.0.0.1:8000/rank/
+参数: {'number': None, 'start': 'a', 'stop': 20}, body: None
+测试401结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：1.9946098327636719ms
+测试402：url=http://127.0.0.1:8000/rank/
+参数: {'number': None, 'start': 'a', 'stop': None}, body: None
+测试402结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：3.0167102813720703ms
+测试403：url=http://127.0.0.1:8000/rank/
+参数: {'number': None, 'start': 'a', 'stop': ''}, body: None
+测试403结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：1.9958019256591797ms
+测试404：url=http://127.0.0.1:8000/rank/
+参数: {'number': None, 'start': 'a', 'stop': '1'}, body: None
+测试404结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：2.9664039611816406ms
+测试405：url=http://127.0.0.1:8000/rank/
+参数: {'number': None, 'start': 'a', 'stop': 'a'}, body: None
+测试405结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：2.992868423461914ms
+测试406：url=http://127.0.0.1:8000/rank/
+参数: {'number': '', 'start': -1, 'stop': -1}, body: None
+测试406结果: status=400, response={'detail': "don't pass client number"}  响应时间：2.991914749145508ms
+测试407：url=http://127.0.0.1:8000/rank/
+参数: {'number': '', 'start': -1, 'stop': 0}, body: None
+测试407结果: status=400, response={'detail': "don't pass client number"}  响应时间：2.991914749145508ms
+测试408：url=http://127.0.0.1:8000/rank/
+参数: {'number': '', 'start': -1, 'stop': 5}, body: None
+测试408结果: status=400, response={'detail': "don't pass client number"}  响应时间：2.9914379119873047ms
+测试409：url=http://127.0.0.1:8000/rank/
+参数: {'number': '', 'start': -1, 'stop': 10}, body: None
+测试409结果: status=400, response={'detail': "don't pass client number"}  响应时间：2.991914749145508ms
+测试410：url=http://127.0.0.1:8000/rank/
+参数: {'number': '', 'start': -1, 'stop': 20}, body: None
+测试410结果: status=400, response={'detail': "don't pass client number"}  响应时间：2.0275115966796875ms
+测试411：url=http://127.0.0.1:8000/rank/
+参数: {'number': '', 'start': -1, 'stop': None}, body: None
+测试411结果: status=400, response={'detail': "don't pass client number"}  响应时间：2.9594898223876953ms
+测试412：url=http://127.0.0.1:8000/rank/
+参数: {'number': '', 'start': -1, 'stop': ''}, body: None
+测试412结果: status=400, response={'detail': "don't pass client number"}  响应时间：2.991914749145508ms
+测试413：url=http://127.0.0.1:8000/rank/
+参数: {'number': '', 'start': -1, 'stop': '1'}, body: None
+测试413结果: status=400, response={'detail': "don't pass client number"}  响应时间：2.9916763305664062ms
+测试414：url=http://127.0.0.1:8000/rank/
+参数: {'number': '', 'start': -1, 'stop': 'a'}, body: None
+测试414结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：2.992391586303711ms
+测试415：url=http://127.0.0.1:8000/rank/
+参数: {'number': '', 'start': 0, 'stop': -1}, body: None
+测试415结果: status=400, response={'detail': "don't pass client number"}  响应时间：2.991914749145508ms
+测试416：url=http://127.0.0.1:8000/rank/
+参数: {'number': '', 'start': 0, 'stop': 0}, body: None
+测试416结果: status=400, response={'detail': "don't pass client number"}  响应时间：2.9916763305664062ms
+测试417：url=http://127.0.0.1:8000/rank/
+参数: {'number': '', 'start': 0, 'stop': 5}, body: None
+测试417结果: status=400, response={'detail': "don't pass client number"}  响应时间：2.993345260620117ms
+测试418：url=http://127.0.0.1:8000/rank/
+参数: {'number': '', 'start': 0, 'stop': 10}, body: None
+测试418结果: status=400, response={'detail': "don't pass client number"}  响应时间：2.9914379119873047ms
+测试419：url=http://127.0.0.1:8000/rank/
+参数: {'number': '', 'start': 0, 'stop': 20}, body: None
+测试419结果: status=400, response={'detail': "don't pass client number"}  响应时间：2.992391586303711ms
+测试420：url=http://127.0.0.1:8000/rank/
+参数: {'number': '', 'start': 0, 'stop': None}, body: None
+测试420结果: status=400, response={'detail': "don't pass client number"}  响应时间：1.9941329956054688ms
+测试421：url=http://127.0.0.1:8000/rank/
+参数: {'number': '', 'start': 0, 'stop': ''}, body: None
+测试421结果: status=400, response={'detail': "don't pass client number"}  响应时间：1.9941329956054688ms
+测试422：url=http://127.0.0.1:8000/rank/
+参数: {'number': '', 'start': 0, 'stop': '1'}, body: None
+测试422结果: status=400, response={'detail': "don't pass client number"}  响应时间：1.9958019256591797ms
+测试423：url=http://127.0.0.1:8000/rank/
+参数: {'number': '', 'start': 0, 'stop': 'a'}, body: None
+测试423结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：2.9904842376708984ms
+测试424：url=http://127.0.0.1:8000/rank/
+参数: {'number': '', 'start': 1, 'stop': -1}, body: None
+测试424结果: status=400, response={'detail': "don't pass client number"}  响应时间：22.938966751098633ms
+测试425：url=http://127.0.0.1:8000/rank/
+参数: {'number': '', 'start': 1, 'stop': 0}, body: None
+测试425结果: status=400, response={'detail': "don't pass client number"}  响应时间：2.9921531677246094ms
+测试426：url=http://127.0.0.1:8000/rank/
+参数: {'number': '', 'start': 1, 'stop': 5}, body: None
+测试426结果: status=400, response={'detail': "don't pass client number"}  响应时间：1.9943714141845703ms
+测试427：url=http://127.0.0.1:8000/rank/
+参数: {'number': '', 'start': 1, 'stop': 10}, body: None
+测试427结果: status=400, response={'detail': "don't pass client number"}  响应时间：2.992391586303711ms
+测试428：url=http://127.0.0.1:8000/rank/
+参数: {'number': '', 'start': 1, 'stop': 20}, body: None
+测试428结果: status=400, response={'detail': "don't pass client number"}  响应时间：2.9921531677246094ms
+测试429：url=http://127.0.0.1:8000/rank/
+参数: {'number': '', 'start': 1, 'stop': None}, body: None
+测试429结果: status=400, response={'detail': "don't pass client number"}  响应时间：1.9938945770263672ms
+测试430：url=http://127.0.0.1:8000/rank/
+参数: {'number': '', 'start': 1, 'stop': ''}, body: None
+测试430结果: status=400, response={'detail': "don't pass client number"}  响应时间：2.992868423461914ms
+测试431：url=http://127.0.0.1:8000/rank/
+参数: {'number': '', 'start': 1, 'stop': '1'}, body: None
+测试431结果: status=400, response={'detail': "don't pass client number"}  响应时间：1.9941329956054688ms
+测试432：url=http://127.0.0.1:8000/rank/
+参数: {'number': '', 'start': 1, 'stop': 'a'}, body: None
+测试432结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：2.991914749145508ms
+测试433：url=http://127.0.0.1:8000/rank/
+参数: {'number': '', 'start': 10, 'stop': -1}, body: None
+测试433结果: status=400, response={'detail': "don't pass client number"}  响应时间：2.9916763305664062ms
+测试434：url=http://127.0.0.1:8000/rank/
+参数: {'number': '', 'start': 10, 'stop': 0}, body: None
+测试434结果: status=400, response={'detail': "don't pass client number"}  响应时间：2.993345260620117ms
+测试435：url=http://127.0.0.1:8000/rank/
+参数: {'number': '', 'start': 10, 'stop': 5}, body: None
+测试435结果: status=400, response={'detail': "don't pass client number"}  响应时间：1.9938945770263672ms
+测试436：url=http://127.0.0.1:8000/rank/
+参数: {'number': '', 'start': 10, 'stop': 10}, body: None
+测试436结果: status=400, response={'detail': "don't pass client number"}  响应时间：2.9926300048828125ms
+测试437：url=http://127.0.0.1:8000/rank/
+参数: {'number': '', 'start': 10, 'stop': 20}, body: None
+测试437结果: status=400, response={'detail': "don't pass client number"}  响应时间：2.991914749145508ms
+测试438：url=http://127.0.0.1:8000/rank/
+参数: {'number': '', 'start': 10, 'stop': None}, body: None
+测试438结果: status=400, response={'detail': "don't pass client number"}  响应时间：2.991199493408203ms
+测试439：url=http://127.0.0.1:8000/rank/
+参数: {'number': '', 'start': 10, 'stop': ''}, body: None
+测试439结果: status=400, response={'detail': "don't pass client number"}  响应时间：2.991914749145508ms
+测试440：url=http://127.0.0.1:8000/rank/
+参数: {'number': '', 'start': 10, 'stop': '1'}, body: None
+测试440结果: status=400, response={'detail': "don't pass client number"}  响应时间：2.9926300048828125ms
+测试441：url=http://127.0.0.1:8000/rank/
+参数: {'number': '', 'start': 10, 'stop': 'a'}, body: None
+测试441结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：1.9938945770263672ms
+测试442：url=http://127.0.0.1:8000/rank/
+参数: {'number': '', 'start': None, 'stop': -1}, body: None
+测试442结果: status=400, response={'detail': "don't pass client number"}  响应时间：2.9921531677246094ms
+测试443：url=http://127.0.0.1:8000/rank/
+参数: {'number': '', 'start': None, 'stop': 0}, body: None
+测试443结果: status=400, response={'detail': "don't pass client number"}  响应时间：2.991914749145508ms
+测试444：url=http://127.0.0.1:8000/rank/
+参数: {'number': '', 'start': None, 'stop': 5}, body: None
+测试444结果: status=400, response={'detail': "don't pass client number"}  响应时间：3.0303001403808594ms
+测试445：url=http://127.0.0.1:8000/rank/
+参数: {'number': '', 'start': None, 'stop': 10}, body: None
+测试445结果: status=400, response={'detail': "don't pass client number"}  响应时间：1.9841194152832031ms
+测试446：url=http://127.0.0.1:8000/rank/
+参数: {'number': '', 'start': None, 'stop': 20}, body: None
+测试446结果: status=400, response={'detail': "don't pass client number"}  响应时间：2.9649734497070312ms
+测试447：url=http://127.0.0.1:8000/rank/
+参数: {'number': '', 'start': None, 'stop': None}, body: None
+测试447结果: status=400, response={'detail': "don't pass client number"}  响应时间：2.992391586303711ms
+测试448：url=http://127.0.0.1:8000/rank/
+参数: {'number': '', 'start': None, 'stop': ''}, body: None
+测试448结果: status=400, response={'detail': "don't pass client number"}  响应时间：2.0215511322021484ms
+测试449：url=http://127.0.0.1:8000/rank/
+参数: {'number': '', 'start': None, 'stop': '1'}, body: None
+测试449结果: status=400, response={'detail': "don't pass client number"}  响应时间：2.964019775390625ms
+测试450：url=http://127.0.0.1:8000/rank/
+参数: {'number': '', 'start': None, 'stop': 'a'}, body: None
+测试450结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：2.019643783569336ms
+测试451：url=http://127.0.0.1:8000/rank/
+参数: {'number': '', 'start': '', 'stop': -1}, body: None
+测试451结果: status=400, response={'detail': "don't pass client number"}  响应时间：2.991199493408203ms
+测试452：url=http://127.0.0.1:8000/rank/
+参数: {'number': '', 'start': '', 'stop': 0}, body: None
+测试452结果: status=400, response={'detail': "don't pass client number"}  响应时间：2.989053726196289ms
+测试453：url=http://127.0.0.1:8000/rank/
+参数: {'number': '', 'start': '', 'stop': 5}, body: None
+测试453结果: status=400, response={'detail': "don't pass client number"}  响应时间：1.973867416381836ms
+测试454：url=http://127.0.0.1:8000/rank/
+参数: {'number': '', 'start': '', 'stop': 10}, body: None
+测试454结果: status=400, response={'detail': "don't pass client number"}  响应时间：1.9948482513427734ms
+测试455：url=http://127.0.0.1:8000/rank/
+参数: {'number': '', 'start': '', 'stop': 20}, body: None
+测试455结果: status=400, response={'detail': "don't pass client number"}  响应时间：1.9941329956054688ms
+测试456：url=http://127.0.0.1:8000/rank/
+参数: {'number': '', 'start': '', 'stop': None}, body: None
+测试456结果: status=400, response={'detail': "don't pass client number"}  响应时间：3.0159950256347656ms
+测试457：url=http://127.0.0.1:8000/rank/
+参数: {'number': '', 'start': '', 'stop': ''}, body: None
+测试457结果: status=400, response={'detail': "don't pass client number"}  响应时间：1.9714832305908203ms
+测试458：url=http://127.0.0.1:8000/rank/
+参数: {'number': '', 'start': '', 'stop': '1'}, body: None
+测试458结果: status=400, response={'detail': "don't pass client number"}  响应时间：2.992868423461914ms
+测试459：url=http://127.0.0.1:8000/rank/
+参数: {'number': '', 'start': '', 'stop': 'a'}, body: None
+测试459结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：3.0231475830078125ms
+测试460：url=http://127.0.0.1:8000/rank/
+参数: {'number': '', 'start': '1', 'stop': -1}, body: None
+测试460结果: status=400, response={'detail': "don't pass client number"}  响应时间：1.9619464874267578ms
+测试461：url=http://127.0.0.1:8000/rank/
+参数: {'number': '', 'start': '1', 'stop': 0}, body: None
+测试461结果: status=400, response={'detail': "don't pass client number"}  响应时间：1.9946098327636719ms
+测试462：url=http://127.0.0.1:8000/rank/
+参数: {'number': '', 'start': '1', 'stop': 5}, body: None
+测试462结果: status=400, response={'detail': "don't pass client number"}  响应时间：2.9935836791992188ms
+测试463：url=http://127.0.0.1:8000/rank/
+参数: {'number': '', 'start': '1', 'stop': 10}, body: None
+测试463结果: status=400, response={'detail': "don't pass client number"}  响应时间：2.0248889923095703ms
+测试464：url=http://127.0.0.1:8000/rank/
+参数: {'number': '', 'start': '1', 'stop': 20}, body: None
+测试464结果: status=400, response={'detail': "don't pass client number"}  响应时间：1.9922256469726562ms
+测试465：url=http://127.0.0.1:8000/rank/
+参数: {'number': '', 'start': '1', 'stop': None}, body: None
+测试465结果: status=400, response={'detail': "don't pass client number"}  响应时间：3.9865970611572266ms
+测试466：url=http://127.0.0.1:8000/rank/
+参数: {'number': '', 'start': '1', 'stop': ''}, body: None
+测试466结果: status=400, response={'detail': "don't pass client number"}  响应时间：1.996755599975586ms
+测试467：url=http://127.0.0.1:8000/rank/
+参数: {'number': '', 'start': '1', 'stop': '1'}, body: None
+测试467结果: status=400, response={'detail': "don't pass client number"}  响应时间：1.9659996032714844ms
+测试468：url=http://127.0.0.1:8000/rank/
+参数: {'number': '', 'start': '1', 'stop': 'a'}, body: None
+测试468结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：1.9948482513427734ms
+测试469：url=http://127.0.0.1:8000/rank/
+参数: {'number': '', 'start': '20', 'stop': -1}, body: None
+测试469结果: status=400, response={'detail': "don't pass client number"}  响应时间：2.9916763305664062ms
+测试470：url=http://127.0.0.1:8000/rank/
+参数: {'number': '', 'start': '20', 'stop': 0}, body: None
+测试470结果: status=400, response={'detail': "don't pass client number"}  响应时间：2.026081085205078ms
+测试471：url=http://127.0.0.1:8000/rank/
+参数: {'number': '', 'start': '20', 'stop': 5}, body: None
+测试471结果: status=400, response={'detail': "don't pass client number"}  响应时间：1.9943714141845703ms
+测试472：url=http://127.0.0.1:8000/rank/
+参数: {'number': '', 'start': '20', 'stop': 10}, body: None
+测试472结果: status=400, response={'detail': "don't pass client number"}  响应时间：2.9609203338623047ms
+测试473：url=http://127.0.0.1:8000/rank/
+参数: {'number': '', 'start': '20', 'stop': 20}, body: None
+测试473结果: status=400, response={'detail': "don't pass client number"}  响应时间：1.9948482513427734ms
+测试474：url=http://127.0.0.1:8000/rank/
+参数: {'number': '', 'start': '20', 'stop': None}, body: None
+测试474结果: status=400, response={'detail': "don't pass client number"}  响应时间：2.019166946411133ms
+测试475：url=http://127.0.0.1:8000/rank/
+参数: {'number': '', 'start': '20', 'stop': ''}, body: None
+测试475结果: status=400, response={'detail': "don't pass client number"}  响应时间：1.9943714141845703ms
+测试476：url=http://127.0.0.1:8000/rank/
+参数: {'number': '', 'start': '20', 'stop': '1'}, body: None
+测试476结果: status=400, response={'detail': "don't pass client number"}  响应时间：1.970052719116211ms
+测试477：url=http://127.0.0.1:8000/rank/
+参数: {'number': '', 'start': '20', 'stop': 'a'}, body: None
+测试477结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：4.987478256225586ms
+测试478：url=http://127.0.0.1:8000/rank/
+参数: {'number': '', 'start': 'a', 'stop': -1}, body: None
+测试478结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：2.9916763305664062ms
+测试479：url=http://127.0.0.1:8000/rank/
+参数: {'number': '', 'start': 'a', 'stop': 0}, body: None
+测试479结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：1.9943714141845703ms
+测试480：url=http://127.0.0.1:8000/rank/
+参数: {'number': '', 'start': 'a', 'stop': 5}, body: None
+测试480结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：2.0227432250976562ms
+测试481：url=http://127.0.0.1:8000/rank/
+参数: {'number': '', 'start': 'a', 'stop': 10}, body: None
+测试481结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：2.964496612548828ms
+测试482：url=http://127.0.0.1:8000/rank/
+参数: {'number': '', 'start': 'a', 'stop': 20}, body: None
+测试482结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：2.0194053649902344ms
+测试483：url=http://127.0.0.1:8000/rank/
+参数: {'number': '', 'start': 'a', 'stop': None}, body: None
+测试483结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：2.9947757720947266ms
+测试484：url=http://127.0.0.1:8000/rank/
+参数: {'number': '', 'start': 'a', 'stop': ''}, body: None
+测试484结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：1.966714859008789ms
+测试485：url=http://127.0.0.1:8000/rank/
+参数: {'number': '', 'start': 'a', 'stop': '1'}, body: None
+测试485结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：1.9955635070800781ms
+测试486：url=http://127.0.0.1:8000/rank/
+参数: {'number': '', 'start': 'a', 'stop': 'a'}, body: None
+测试486结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：2.0210742950439453ms
+测试487：url=http://127.0.0.1:8000/rank/
+参数: {'number': '1', 'start': -1, 'stop': -1}, body: None
+测试487结果: status=200, response=[[1, 100], [1, 100]]  响应时间：2.965211868286133ms
+测试488：url=http://127.0.0.1:8000/rank/
+参数: {'number': '1', 'start': -1, 'stop': 0}, body: None
+测试488结果: status=200, response=[[1, 100]]  响应时间：2.9921531677246094ms
+测试489：url=http://127.0.0.1:8000/rank/
+参数: {'number': '1', 'start': -1, 'stop': 5}, body: None
+测试489结果: status=200, response=[[1, 100], [1, 100]]  响应时间：2.991914749145508ms
+测试490：url=http://127.0.0.1:8000/rank/
+参数: {'number': '1', 'start': -1, 'stop': 10}, body: None
+测试490结果: status=200, response=[[1, 100], [1, 100]]  响应时间：2.9926300048828125ms
+测试491：url=http://127.0.0.1:8000/rank/
+参数: {'number': '1', 'start': -1, 'stop': 20}, body: None
+测试491结果: status=200, response=[[1, 100], [1, 100]]  响应时间：2.9916763305664062ms
+测试492：url=http://127.0.0.1:8000/rank/
+参数: {'number': '1', 'start': -1, 'stop': None}, body: None
+测试492结果: status=200, response=[[1, 100], [1, 100]]  响应时间：2.991199493408203ms
+测试493：url=http://127.0.0.1:8000/rank/
+参数: {'number': '1', 'start': -1, 'stop': ''}, body: None
+测试493结果: status=200, response=[[1, 100], [1, 100]]  响应时间：2.9921531677246094ms
+测试494：url=http://127.0.0.1:8000/rank/
+参数: {'number': '1', 'start': -1, 'stop': '1'}, body: None
+测试494结果: status=200, response=[[1, 100]]  响应时间：3.0210018157958984ms
+测试495：url=http://127.0.0.1:8000/rank/
+参数: {'number': '1', 'start': -1, 'stop': 'a'}, body: None
+测试495结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：1.9938945770263672ms
+测试496：url=http://127.0.0.1:8000/rank/
+参数: {'number': '1', 'start': 0, 'stop': -1}, body: None
+测试496结果: status=200, response=[[6, 200], [5, 200], [3, 102], [2, 100], [1, 100], [1, 100]]  响应时间：2.963542938232422ms
+测试497：url=http://127.0.0.1:8000/rank/
+参数: {'number': '1', 'start': 0, 'stop': 0}, body: None
+测试497结果: status=200, response=[[6, 200], [1, 100]]  响应时间：2.991914749145508ms
+测试498：url=http://127.0.0.1:8000/rank/
+参数: {'number': '1', 'start': 0, 'stop': 5}, body: None
+测试498结果: status=200, response=[[6, 200], [5, 200], [3, 102], [2, 100], [1, 100], [1, 100]]  响应时间：2.991914749145508ms
+测试499：url=http://127.0.0.1:8000/rank/
+参数: {'number': '1', 'start': 0, 'stop': 10}, body: None
+测试499结果: status=200, response=[[6, 200], [5, 200], [3, 102], [2, 100], [1, 100], [1, 100]]  响应时间：2.9926300048828125ms
+测试500：url=http://127.0.0.1:8000/rank/
+参数: {'number': '1', 'start': 0, 'stop': 20}, body: None
+测试500结果: status=200, response=[[6, 200], [5, 200], [3, 102], [2, 100], [1, 100], [1, 100]]  响应时间：2.991914749145508ms
+测试501：url=http://127.0.0.1:8000/rank/
+参数: {'number': '1', 'start': 0, 'stop': None}, body: None
+测试501结果: status=200, response=[[6, 200], [5, 200], [3, 102], [2, 100], [1, 100], [1, 100]]  响应时间：2.9935836791992188ms
+测试502：url=http://127.0.0.1:8000/rank/
+参数: {'number': '1', 'start': 0, 'stop': ''}, body: None
+测试502结果: status=200, response=[[6, 200], [5, 200], [3, 102], [2, 100], [1, 100], [1, 100]]  响应时间：2.990245819091797ms
+测试503：url=http://127.0.0.1:8000/rank/
+参数: {'number': '1', 'start': 0, 'stop': '1'}, body: None
+测试503结果: status=200, response=[[6, 200], [5, 200], [1, 100]]  响应时间：2.9916763305664062ms
+测试504：url=http://127.0.0.1:8000/rank/
+参数: {'number': '1', 'start': 0, 'stop': 'a'}, body: None
+测试504结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：1.995086669921875ms
+测试505：url=http://127.0.0.1:8000/rank/
+参数: {'number': '1', 'start': 1, 'stop': -1}, body: None
+测试505结果: status=200, response=[[5, 200], [3, 102], [2, 100], [1, 100], [1, 100]]  响应时间：2.9921531677246094ms
+测试506：url=http://127.0.0.1:8000/rank/
+参数: {'number': '1', 'start': 1, 'stop': 0}, body: None
+测试506结果: status=200, response=[[1, 100]]  响应时间：3.019571304321289ms
+测试507：url=http://127.0.0.1:8000/rank/
+参数: {'number': '1', 'start': 1, 'stop': 5}, body: None
+测试507结果: status=200, response=[[5, 200], [3, 102], [2, 100], [1, 100], [1, 100]]  响应时间：1.9850730895996094ms
+测试508：url=http://127.0.0.1:8000/rank/
+参数: {'number': '1', 'start': 1, 'stop': 10}, body: None
+测试508结果: status=200, response=[[5, 200], [3, 102], [2, 100], [1, 100], [1, 100]]  响应时间：2.9904842376708984ms
+测试509：url=http://127.0.0.1:8000/rank/
+参数: {'number': '1', 'start': 1, 'stop': 20}, body: None
+测试509结果: status=200, response=[[5, 200], [3, 102], [2, 100], [1, 100], [1, 100]]  响应时间：1.9946098327636719ms
+测试510：url=http://127.0.0.1:8000/rank/
+参数: {'number': '1', 'start': 1, 'stop': None}, body: None
+测试510结果: status=200, response=[[5, 200], [3, 102], [2, 100], [1, 100], [1, 100]]  响应时间：2.9916763305664062ms
+测试511：url=http://127.0.0.1:8000/rank/
+参数: {'number': '1', 'start': 1, 'stop': ''}, body: None
+测试511结果: status=200, response=[[5, 200], [3, 102], [2, 100], [1, 100], [1, 100]]  响应时间：3.9892196655273438ms
+测试512：url=http://127.0.0.1:8000/rank/
+参数: {'number': '1', 'start': 1, 'stop': '1'}, body: None
+测试512结果: status=200, response=[[5, 200], [1, 100]]  响应时间：2.9926300048828125ms
+测试513：url=http://127.0.0.1:8000/rank/
+参数: {'number': '1', 'start': 1, 'stop': 'a'}, body: None
+测试513结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：2.018451690673828ms
+测试514：url=http://127.0.0.1:8000/rank/
+参数: {'number': '1', 'start': 10, 'stop': -1}, body: None
+测试514结果: status=200, response=[[1, 100]]  响应时间：2.096891403198242ms
+测试515：url=http://127.0.0.1:8000/rank/
+参数: {'number': '1', 'start': 10, 'stop': 0}, body: None
+测试515结果: status=200, response=[[1, 100]]  响应时间：2.8905868530273438ms
+测试516：url=http://127.0.0.1:8000/rank/
+参数: {'number': '1', 'start': 10, 'stop': 5}, body: None
+测试516结果: status=200, response=[[1, 100]]  响应时间：3.0205249786376953ms
+测试517：url=http://127.0.0.1:8000/rank/
+参数: {'number': '1', 'start': 10, 'stop': 10}, body: None
+测试517结果: status=200, response=[[1, 100]]  响应时间：2.9878616333007812ms
+测试518：url=http://127.0.0.1:8000/rank/
+参数: {'number': '1', 'start': 10, 'stop': 20}, body: None
+测试518结果: status=200, response=[[1, 100]]  响应时间：2.9952526092529297ms
+测试519：url=http://127.0.0.1:8000/rank/
+参数: {'number': '1', 'start': 10, 'stop': None}, body: None
+测试519结果: status=200, response=[[1, 100]]  响应时间：2.9637813568115234ms
+测试520：url=http://127.0.0.1:8000/rank/
+参数: {'number': '1', 'start': 10, 'stop': ''}, body: None
+测试520结果: status=200, response=[[1, 100]]  响应时间：3.0167102813720703ms
+测试521：url=http://127.0.0.1:8000/rank/
+参数: {'number': '1', 'start': 10, 'stop': '1'}, body: None
+测试521结果: status=200, response=[[1, 100]]  响应时间：2.997159957885742ms
+测试522：url=http://127.0.0.1:8000/rank/
+参数: {'number': '1', 'start': 10, 'stop': 'a'}, body: None
+测试522结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：2.9625892639160156ms
+测试523：url=http://127.0.0.1:8000/rank/
+参数: {'number': '1', 'start': None, 'stop': -1}, body: None
+测试523结果: status=200, response=[[6, 200], [5, 200], [3, 102], [2, 100], [1, 100], [1, 100]]  响应时间：2.9914379119873047ms
+测试524：url=http://127.0.0.1:8000/rank/
+参数: {'number': '1', 'start': None, 'stop': 0}, body: None
+测试524结果: status=200, response=[[6, 200], [1, 100]]  响应时间：3.023862838745117ms
+测试525：url=http://127.0.0.1:8000/rank/
+参数: {'number': '1', 'start': None, 'stop': 5}, body: None
+测试525结果: status=200, response=[[6, 200], [5, 200], [3, 102], [2, 100], [1, 100], [1, 100]]  响应时间：2.9935836791992188ms
+测试526：url=http://127.0.0.1:8000/rank/
+参数: {'number': '1', 'start': None, 'stop': 10}, body: None
+测试526结果: status=200, response=[[6, 200], [5, 200], [3, 102], [2, 100], [1, 100], [1, 100]]  响应时间：2.0308494567871094ms
+测试527：url=http://127.0.0.1:8000/rank/
+参数: {'number': '1', 'start': None, 'stop': 20}, body: None
+测试527结果: status=200, response=[[6, 200], [5, 200], [3, 102], [2, 100], [1, 100], [1, 100]]  响应时间：2.9556751251220703ms
+测试528：url=http://127.0.0.1:8000/rank/
+参数: {'number': '1', 'start': None, 'stop': None}, body: None
+测试528结果: status=200, response=[[6, 200], [5, 200], [3, 102], [2, 100], [1, 100], [1, 100]]  响应时间：3.0193328857421875ms
+测试529：url=http://127.0.0.1:8000/rank/
+参数: {'number': '1', 'start': None, 'stop': ''}, body: None
+测试529结果: status=200, response=[[6, 200], [5, 200], [3, 102], [2, 100], [1, 100], [1, 100]]  响应时间：2.993345260620117ms
+测试530：url=http://127.0.0.1:8000/rank/
+参数: {'number': '1', 'start': None, 'stop': '1'}, body: None
+测试530结果: status=200, response=[[6, 200], [5, 200], [1, 100]]  响应时间：2.9637813568115234ms
+测试531：url=http://127.0.0.1:8000/rank/
+参数: {'number': '1', 'start': None, 'stop': 'a'}, body: None
+测试531结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：2.0215511322021484ms
+测试532：url=http://127.0.0.1:8000/rank/
+参数: {'number': '1', 'start': '', 'stop': -1}, body: None
+测试532结果: status=200, response=[[6, 200], [5, 200], [3, 102], [2, 100], [1, 100], [1, 100]]  响应时间：2.9654502868652344ms
+测试533：url=http://127.0.0.1:8000/rank/
+参数: {'number': '1', 'start': '', 'stop': 0}, body: None
+测试533结果: status=200, response=[[6, 200], [1, 100]]  响应时间：2.9914379119873047ms
+测试534：url=http://127.0.0.1:8000/rank/
+参数: {'number': '1', 'start': '', 'stop': 5}, body: None
+测试534结果: status=200, response=[[6, 200], [5, 200], [3, 102], [2, 100], [1, 100], [1, 100]]  响应时间：2.992391586303711ms
+测试535：url=http://127.0.0.1:8000/rank/
+参数: {'number': '1', 'start': '', 'stop': 10}, body: None
+测试535结果: status=200, response=[[6, 200], [5, 200], [3, 102], [2, 100], [1, 100], [1, 100]]  响应时间：2.991914749145508ms
+测试536：url=http://127.0.0.1:8000/rank/
+参数: {'number': '1', 'start': '', 'stop': 20}, body: None
+测试536结果: status=200, response=[[6, 200], [5, 200], [3, 102], [2, 100], [1, 100], [1, 100]]  响应时间：3.022909164428711ms
+测试537：url=http://127.0.0.1:8000/rank/
+参数: {'number': '1', 'start': '', 'stop': None}, body: None
+测试537结果: status=200, response=[[6, 200], [5, 200], [3, 102], [2, 100], [1, 100], [1, 100]]  响应时间：2.9611587524414062ms
+测试538：url=http://127.0.0.1:8000/rank/
+参数: {'number': '1', 'start': '', 'stop': ''}, body: None
+测试538结果: status=200, response=[[6, 200], [5, 200], [3, 102], [2, 100], [1, 100], [1, 100]]  响应时间：2.9914379119873047ms
+测试539：url=http://127.0.0.1:8000/rank/
+参数: {'number': '1', 'start': '', 'stop': '1'}, body: None
+测试539结果: status=200, response=[[6, 200], [5, 200], [1, 100]]  响应时间：1.9946098327636719ms
+测试540：url=http://127.0.0.1:8000/rank/
+参数: {'number': '1', 'start': '', 'stop': 'a'}, body: None
+测试540结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：3.0193328857421875ms
+测试541：url=http://127.0.0.1:8000/rank/
+参数: {'number': '1', 'start': '1', 'stop': -1}, body: None
+测试541结果: status=200, response=[[5, 200], [3, 102], [2, 100], [1, 100], [1, 100]]  响应时间：2.965211868286133ms
+测试542：url=http://127.0.0.1:8000/rank/
+参数: {'number': '1', 'start': '1', 'stop': 0}, body: None
+测试542结果: status=200, response=[[1, 100]]  响应时间：3.0133724212646484ms
+测试543：url=http://127.0.0.1:8000/rank/
+参数: {'number': '1', 'start': '1', 'stop': 5}, body: None
+测试543结果: status=200, response=[[5, 200], [3, 102], [2, 100], [1, 100], [1, 100]]  响应时间：3.997802734375ms
+测试544：url=http://127.0.0.1:8000/rank/
+参数: {'number': '1', 'start': '1', 'stop': 10}, body: None
+测试544结果: status=200, response=[[5, 200], [3, 102], [2, 100], [1, 100], [1, 100]]  响应时间：1.9922256469726562ms
+测试545：url=http://127.0.0.1:8000/rank/
+参数: {'number': '1', 'start': '1', 'stop': 20}, body: None
+测试545结果: status=200, response=[[5, 200], [3, 102], [2, 100], [1, 100], [1, 100]]  响应时间：3.026247024536133ms
+测试546：url=http://127.0.0.1:8000/rank/
+参数: {'number': '1', 'start': '1', 'stop': None}, body: None
+测试546结果: status=200, response=[[5, 200], [3, 102], [2, 100], [1, 100], [1, 100]]  响应时间：2.9306411743164062ms
+测试547：url=http://127.0.0.1:8000/rank/
+参数: {'number': '1', 'start': '1', 'stop': ''}, body: None
+测试547结果: status=200, response=[[5, 200], [3, 102], [2, 100], [1, 100], [1, 100]]  响应时间：2.9914379119873047ms
+测试548：url=http://127.0.0.1:8000/rank/
+参数: {'number': '1', 'start': '1', 'stop': '1'}, body: None
+测试548结果: status=200, response=[[5, 200], [1, 100]]  响应时间：3.016233444213867ms
+测试549：url=http://127.0.0.1:8000/rank/
+参数: {'number': '1', 'start': '1', 'stop': 'a'}, body: None
+测试549结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：1.995086669921875ms
+测试550：url=http://127.0.0.1:8000/rank/
+参数: {'number': '1', 'start': '20', 'stop': -1}, body: None
+测试550结果: status=200, response=[[1, 100]]  响应时间：2.9668807983398438ms
+测试551：url=http://127.0.0.1:8000/rank/
+参数: {'number': '1', 'start': '20', 'stop': 0}, body: None
+测试551结果: status=200, response=[[1, 100]]  响应时间：2.9921531677246094ms
+测试552：url=http://127.0.0.1:8000/rank/
+参数: {'number': '1', 'start': '20', 'stop': 5}, body: None
+测试552结果: status=200, response=[[1, 100]]  响应时间：1.9946098327636719ms
+测试553：url=http://127.0.0.1:8000/rank/
+参数: {'number': '1', 'start': '20', 'stop': 10}, body: None
+测试553结果: status=200, response=[[1, 100]]  响应时间：7.0056915283203125ms
+测试554：url=http://127.0.0.1:8000/rank/
+参数: {'number': '1', 'start': '20', 'stop': 20}, body: None
+测试554结果: status=200, response=[[1, 100]]  响应时间：2.9921531677246094ms
+测试555：url=http://127.0.0.1:8000/rank/
+参数: {'number': '1', 'start': '20', 'stop': None}, body: None
+测试555结果: status=200, response=[[1, 100]]  响应时间：2.9680728912353516ms
+测试556：url=http://127.0.0.1:8000/rank/
+参数: {'number': '1', 'start': '20', 'stop': ''}, body: None
+测试556结果: status=200, response=[[1, 100]]  响应时间：2.9921531677246094ms
+测试557：url=http://127.0.0.1:8000/rank/
+参数: {'number': '1', 'start': '20', 'stop': '1'}, body: None
+测试557结果: status=200, response=[[1, 100]]  响应时间：3.9894580841064453ms
+测试558：url=http://127.0.0.1:8000/rank/
+参数: {'number': '1', 'start': '20', 'stop': 'a'}, body: None
+测试558结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：2.0182132720947266ms
+测试559：url=http://127.0.0.1:8000/rank/
+参数: {'number': '1', 'start': 'a', 'stop': -1}, body: None
+测试559结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：1.9941329956054688ms
+测试560：url=http://127.0.0.1:8000/rank/
+参数: {'number': '1', 'start': 'a', 'stop': 0}, body: None
+测试560结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：1.9710063934326172ms
+测试561：url=http://127.0.0.1:8000/rank/
+参数: {'number': '1', 'start': 'a', 'stop': 5}, body: None
+测试561结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：2.9926300048828125ms
+测试562：url=http://127.0.0.1:8000/rank/
+参数: {'number': '1', 'start': 'a', 'stop': 10}, body: None
+测试562结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：2.9916763305664062ms
+测试563：url=http://127.0.0.1:8000/rank/
+参数: {'number': '1', 'start': 'a', 'stop': 20}, body: None
+测试563结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：1.9943714141845703ms
+测试564：url=http://127.0.0.1:8000/rank/
+参数: {'number': '1', 'start': 'a', 'stop': None}, body: None
+测试564结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：1.9948482513427734ms
+测试565：url=http://127.0.0.1:8000/rank/
+参数: {'number': '1', 'start': 'a', 'stop': ''}, body: None
+测试565结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：3.0155181884765625ms
+测试566：url=http://127.0.0.1:8000/rank/
+参数: {'number': '1', 'start': 'a', 'stop': '1'}, body: None
+测试566结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：1.9707679748535156ms
+测试567：url=http://127.0.0.1:8000/rank/
+参数: {'number': '1', 'start': 'a', 'stop': 'a'}, body: None
+测试567结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：1.9943714141845703ms
+测试568：url=http://127.0.0.1:8000/rank/
+参数: {'number': 'a', 'start': -1, 'stop': -1}, body: None
+测试568结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：2.028226852416992ms
+测试569：url=http://127.0.0.1:8000/rank/
+参数: {'number': 'a', 'start': -1, 'stop': 0}, body: None
+测试569结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：1.9614696502685547ms
+测试570：url=http://127.0.0.1:8000/rank/
+参数: {'number': 'a', 'start': -1, 'stop': 5}, body: None
+测试570结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：2.994060516357422ms
+测试571：url=http://127.0.0.1:8000/rank/
+参数: {'number': 'a', 'start': -1, 'stop': 10}, body: None
+测试571结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：2.9859542846679688ms
+测试572：url=http://127.0.0.1:8000/rank/
+参数: {'number': 'a', 'start': -1, 'stop': 20}, body: None
+测试572结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：2.001047134399414ms
+测试573：url=http://127.0.0.1:8000/rank/
+参数: {'number': 'a', 'start': -1, 'stop': None}, body: None
+测试573结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：1.987457275390625ms
+测试574：url=http://127.0.0.1:8000/rank/
+参数: {'number': 'a', 'start': -1, 'stop': ''}, body: None
+测试574结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：2.0008087158203125ms
+测试575：url=http://127.0.0.1:8000/rank/
+参数: {'number': 'a', 'start': -1, 'stop': '1'}, body: None
+测试575结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：1.9640922546386719ms
+测试576：url=http://127.0.0.1:8000/rank/
+参数: {'number': 'a', 'start': -1, 'stop': 'a'}, body: None
+测试576结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：2.020120620727539ms
+测试577：url=http://127.0.0.1:8000/rank/
+参数: {'number': 'a', 'start': 0, 'stop': -1}, body: None
+测试577结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：1.9698143005371094ms
+测试578：url=http://127.0.0.1:8000/rank/
+参数: {'number': 'a', 'start': 0, 'stop': 0}, body: None
+测试578结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：4.0130615234375ms
+测试579：url=http://127.0.0.1:8000/rank/
+参数: {'number': 'a', 'start': 0, 'stop': 5}, body: None
+测试579结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：1.9946098327636719ms
+测试580：url=http://127.0.0.1:8000/rank/
+参数: {'number': 'a', 'start': 0, 'stop': 10}, body: None
+测试580结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：2.0029544830322266ms
+测试581：url=http://127.0.0.1:8000/rank/
+参数: {'number': 'a', 'start': 0, 'stop': 20}, body: None
+测试581结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：2.959012985229492ms
+测试582：url=http://127.0.0.1:8000/rank/
+参数: {'number': 'a', 'start': 0, 'stop': None}, body: None
+测试582结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：2.019643783569336ms
+测试583：url=http://127.0.0.1:8000/rank/
+参数: {'number': 'a', 'start': 0, 'stop': ''}, body: None
+测试583结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：1.9559860229492188ms
+测试584：url=http://127.0.0.1:8000/rank/
+参数: {'number': 'a', 'start': 0, 'stop': '1'}, body: None
+测试584结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：2.021312713623047ms
+测试585：url=http://127.0.0.1:8000/rank/
+参数: {'number': 'a', 'start': 0, 'stop': 'a'}, body: None
+测试585结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：2.965211868286133ms
+测试586：url=http://127.0.0.1:8000/rank/
+参数: {'number': 'a', 'start': 1, 'stop': -1}, body: None
+测试586结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：1.9943714141845703ms
+测试587：url=http://127.0.0.1:8000/rank/
+参数: {'number': 'a', 'start': 1, 'stop': 0}, body: None
+测试587结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：1.9943714141845703ms
+测试588：url=http://127.0.0.1:8000/rank/
+参数: {'number': 'a', 'start': 1, 'stop': 5}, body: None
+测试588结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：3.0171871185302734ms
+测试589：url=http://127.0.0.1:8000/rank/
+参数: {'number': 'a', 'start': 1, 'stop': 10}, body: None
+测试589结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：1.9938945770263672ms
+测试590：url=http://127.0.0.1:8000/rank/
+参数: {'number': 'a', 'start': 1, 'stop': 20}, body: None
+测试590结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：1.9845962524414062ms
+测试591：url=http://127.0.0.1:8000/rank/
+参数: {'number': 'a', 'start': 1, 'stop': None}, body: None
+测试591结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：2.9630661010742188ms
+测试592：url=http://127.0.0.1:8000/rank/
+参数: {'number': 'a', 'start': 1, 'stop': ''}, body: None
+测试592结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：1.9938945770263672ms
+测试593：url=http://127.0.0.1:8000/rank/
+参数: {'number': 'a', 'start': 1, 'stop': '1'}, body: None
+测试593结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：1.9955635070800781ms
+测试594：url=http://127.0.0.1:8000/rank/
+参数: {'number': 'a', 'start': 1, 'stop': 'a'}, body: None
+测试594结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：2.021312713623047ms
+测试595：url=http://127.0.0.1:8000/rank/
+参数: {'number': 'a', 'start': 10, 'stop': -1}, body: None
+测试595结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：1.9860267639160156ms
+测试596：url=http://127.0.0.1:8000/rank/
+参数: {'number': 'a', 'start': 10, 'stop': 0}, body: None
+测试596结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：3.004789352416992ms
+测试597：url=http://127.0.0.1:8000/rank/
+参数: {'number': 'a', 'start': 10, 'stop': 5}, body: None
+测试597结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：1.9922256469726562ms
+测试598：url=http://127.0.0.1:8000/rank/
+参数: {'number': 'a', 'start': 10, 'stop': 10}, body: None
+测试598结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：2.9799938201904297ms
+测试599：url=http://127.0.0.1:8000/rank/
+参数: {'number': 'a', 'start': 10, 'stop': 20}, body: None
+测试599结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：2.974987030029297ms
+测试600：url=http://127.0.0.1:8000/rank/
+参数: {'number': 'a', 'start': 10, 'stop': None}, body: None
+测试600结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：2.9921531677246094ms
+测试601：url=http://127.0.0.1:8000/rank/
+参数: {'number': 'a', 'start': 10, 'stop': ''}, body: None
+测试601结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：2.018451690673828ms
+测试602：url=http://127.0.0.1:8000/rank/
+参数: {'number': 'a', 'start': 10, 'stop': '1'}, body: None
+测试602结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：2.001523971557617ms
+测试603：url=http://127.0.0.1:8000/rank/
+参数: {'number': 'a', 'start': 10, 'stop': 'a'}, body: None
+测试603结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：1.9640922546386719ms
+测试604：url=http://127.0.0.1:8000/rank/
+参数: {'number': 'a', 'start': None, 'stop': -1}, body: None
+测试604结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：2.997159957885742ms
+测试605：url=http://127.0.0.1:8000/rank/
+参数: {'number': 'a', 'start': None, 'stop': 0}, body: None
+测试605结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：1.989603042602539ms
+测试606：url=http://127.0.0.1:8000/rank/
+参数: {'number': 'a', 'start': None, 'stop': 5}, body: None
+测试606结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：2.023935317993164ms
+测试607：url=http://127.0.0.1:8000/rank/
+参数: {'number': 'a', 'start': None, 'stop': 10}, body: None
+测试607结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：1.9655227661132812ms
+测试608：url=http://127.0.0.1:8000/rank/
+参数: {'number': 'a', 'start': None, 'stop': 20}, body: None
+测试608结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：2.9921531677246094ms
+测试609：url=http://127.0.0.1:8000/rank/
+参数: {'number': 'a', 'start': None, 'stop': None}, body: None
+测试609结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：2.0232200622558594ms
+测试610：url=http://127.0.0.1:8000/rank/
+参数: {'number': 'a', 'start': None, 'stop': ''}, body: None
+测试610结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：1.9981861114501953ms
+测试611：url=http://127.0.0.1:8000/rank/
+参数: {'number': 'a', 'start': None, 'stop': '1'}, body: None
+测试611结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：1.9621849060058594ms
+测试612：url=http://127.0.0.1:8000/rank/
+参数: {'number': 'a', 'start': None, 'stop': 'a'}, body: None
+测试612结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：2.0241737365722656ms
+测试613：url=http://127.0.0.1:8000/rank/
+参数: {'number': 'a', 'start': '', 'stop': -1}, body: None
+测试613结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：2.986431121826172ms
+测试614：url=http://127.0.0.1:8000/rank/
+参数: {'number': 'a', 'start': '', 'stop': 0}, body: None
+测试614结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：2.9680728912353516ms
+测试615：url=http://127.0.0.1:8000/rank/
+参数: {'number': 'a', 'start': '', 'stop': 5}, body: None
+测试615结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：2.9926300048828125ms
+测试616：url=http://127.0.0.1:8000/rank/
+参数: {'number': 'a', 'start': '', 'stop': 10}, body: None
+测试616结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：2.9914379119873047ms
+测试617：url=http://127.0.0.1:8000/rank/
+参数: {'number': 'a', 'start': '', 'stop': 20}, body: None
+测试617结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：1.9946098327636719ms
+测试618：url=http://127.0.0.1:8000/rank/
+参数: {'number': 'a', 'start': '', 'stop': None}, body: None
+测试618结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：2.019643783569336ms
+测试619：url=http://127.0.0.1:8000/rank/
+参数: {'number': 'a', 'start': '', 'stop': ''}, body: None
+测试619结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：2.9916763305664062ms
+测试620：url=http://127.0.0.1:8000/rank/
+参数: {'number': 'a', 'start': '', 'stop': '1'}, body: None
+测试620结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：1.9938945770263672ms
+测试621：url=http://127.0.0.1:8000/rank/
+参数: {'number': 'a', 'start': '', 'stop': 'a'}, body: None
+测试621结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：1.9989013671875ms
+测试622：url=http://127.0.0.1:8000/rank/
+参数: {'number': 'a', 'start': '1', 'stop': -1}, body: None
+测试622结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：1.9962787628173828ms
+测试623：url=http://127.0.0.1:8000/rank/
+参数: {'number': 'a', 'start': '1', 'stop': 0}, body: None
+测试623结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：1.9648075103759766ms
+测试624：url=http://127.0.0.1:8000/rank/
+参数: {'number': 'a', 'start': '1', 'stop': 5}, body: None
+测试624结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：2.024412155151367ms
+测试625：url=http://127.0.0.1:8000/rank/
+参数: {'number': 'a', 'start': '1', 'stop': 10}, body: None
+测试625结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：1.9652843475341797ms
+测试626：url=http://127.0.0.1:8000/rank/
+参数: {'number': 'a', 'start': '1', 'stop': 20}, body: None
+测试626结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：2.0279884338378906ms
+测试627：url=http://127.0.0.1:8000/rank/
+参数: {'number': 'a', 'start': '1', 'stop': None}, body: None
+测试627结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：2.958536148071289ms
+测试628：url=http://127.0.0.1:8000/rank/
+参数: {'number': 'a', 'start': '1', 'stop': ''}, body: None
+测试628结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：2.992391586303711ms
+测试629：url=http://127.0.0.1:8000/rank/
+参数: {'number': 'a', 'start': '1', 'stop': '1'}, body: None
+测试629结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：2.991914749145508ms
+测试630：url=http://127.0.0.1:8000/rank/
+参数: {'number': 'a', 'start': '1', 'stop': 'a'}, body: None
+测试630结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：1.9946098327636719ms
+测试631：url=http://127.0.0.1:8000/rank/
+参数: {'number': 'a', 'start': '20', 'stop': -1}, body: None
+测试631结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：2.0220279693603516ms
+测试632：url=http://127.0.0.1:8000/rank/
+参数: {'number': 'a', 'start': '20', 'stop': 0}, body: None
+测试632结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：1.9919872283935547ms
+测试633：url=http://127.0.0.1:8000/rank/
+参数: {'number': 'a', 'start': '20', 'stop': 5}, body: None
+测试633结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：2.967357635498047ms
+测试634：url=http://127.0.0.1:8000/rank/
+参数: {'number': 'a', 'start': '20', 'stop': 10}, body: None
+测试634结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：2.0155906677246094ms
+测试635：url=http://127.0.0.1:8000/rank/
+参数: {'number': 'a', 'start': '20', 'stop': 20}, body: None
+测试635结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：1.9731521606445312ms
+测试636：url=http://127.0.0.1:8000/rank/
+参数: {'number': 'a', 'start': '20', 'stop': None}, body: None
+测试636结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：1.9953250885009766ms
+测试637：url=http://127.0.0.1:8000/rank/
+参数: {'number': 'a', 'start': '20', 'stop': ''}, body: None
+测试637结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：3.018617630004883ms
+测试638：url=http://127.0.0.1:8000/rank/
+参数: {'number': 'a', 'start': '20', 'stop': '1'}, body: None
+测试638结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：1.9674301147460938ms
+测试639：url=http://127.0.0.1:8000/rank/
+参数: {'number': 'a', 'start': '20', 'stop': 'a'}, body: None
+测试639结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：2.991914749145508ms
+测试640：url=http://127.0.0.1:8000/rank/
+参数: {'number': 'a', 'start': 'a', 'stop': -1}, body: None
+测试640结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：2.9935836791992188ms
+测试641：url=http://127.0.0.1:8000/rank/
+参数: {'number': 'a', 'start': 'a', 'stop': 0}, body: None
+测试641结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：2.991199493408203ms
+测试642：url=http://127.0.0.1:8000/rank/
+参数: {'number': 'a', 'start': 'a', 'stop': 5}, body: None
+测试642结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：2.0215511322021484ms
+测试643：url=http://127.0.0.1:8000/rank/
+参数: {'number': 'a', 'start': 'a', 'stop': 10}, body: None
+测试643结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：1.9943714141845703ms
+测试644：url=http://127.0.0.1:8000/rank/
+参数: {'number': 'a', 'start': 'a', 'stop': 20}, body: None
+测试644结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：1.9679069519042969ms
+测试645：url=http://127.0.0.1:8000/rank/
+参数: {'number': 'a', 'start': 'a', 'stop': None}, body: None
+测试645结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：1.9946098327636719ms
+测试646：url=http://127.0.0.1:8000/rank/
+参数: {'number': 'a', 'start': 'a', 'stop': ''}, body: None
+测试646结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：1.970052719116211ms
+测试647：url=http://127.0.0.1:8000/rank/
+参数: {'number': 'a', 'start': 'a', 'stop': '1'}, body: None
+测试647结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：1.9946098327636719ms
+测试648：url=http://127.0.0.1:8000/rank/
+参数: {'number': 'a', 'start': 'a', 'stop': 'a'}, body: None
+测试648结果: status=400, response={'detail': "params error: invalid literal for int() with base 10: 'a'"}  响应时间：2.022266387939453ms
